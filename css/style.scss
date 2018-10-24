@@ -291,7 +291,7 @@ body
 	/* Start Header */
 	.header
 	{
-	  background      : url("../img/bicycle.png") fixed no-repeat;
+	  background      : url("../img/bicycle.jpg") fixed no-repeat;
 	  background-size : cover;
 	  position        : relative;
 	  .card-img-overlay
@@ -345,6 +345,11 @@ body
 	  .product
 	  {
 		margin-bottom : 40px;
+		img
+		{
+		  border        : 3px solid $althColor;
+		  border-radius : 0.5rem;
+		}
 		.btn-shop
 		{
 		  display       : inline-block;

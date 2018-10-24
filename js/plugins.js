@@ -1,4 +1,6 @@
-document.querySelector(".homePage .header").style.height = "calc(100vh - (210px))";
+if ($("body").hasClass("homePage")) {
+	document.querySelector(".homePage .header").style.height = "calc(100vh - (210px))";
+}
 $(".owl-products")
 	.owlCarousel({
 		center: true,
