@@ -1576,4 +1576,341 @@ body
 	}
   }
   /* End Cart Page */
+  &.checkoutPage
+  {
+	height : 5000px;
+	.small-nav
+	{
+	  background    : linear-gradient(90deg, $mainBGColor 0%, $secondBGColor 100%);
+	  height        : 140px;
+	  position      : sticky;
+	  top           : 0;
+	  width         : 100%;
+	  z-index       : 2;
+	  text-align    : center;
+	  margin-bottom : 60px;
+	  i
+	  {
+		color     : $secondTXTColor;
+		font-size : 35px;
+	  }
+	  p
+	  {
+		color       : $secondTXTColor;
+		font-size   : 25px;
+		font-family : raleway-medium, sans-serif;
+	  }
+	}
+	.delivery-step
+	{
+	  background    : #FFF;
+	  box-shadow    : 0 0 6px 0 rgba(0, 0, 0, 0.2);
+	  border-radius : 0.5rem;
+	  overflow      : hidden;
+	  position      : relative;
+	  padding       : 60px 30px;
+	  .steps-meter
+	  {
+		position   : absolute;
+		top        : 0;
+		left       : 0;
+		right      : 0;
+		background : linear-gradient(90deg, $mainBGColor 0%, $secondBGColor 20%, #FFF 33.3333%, #FFF 100%);
+		padding    : 4px 0;
+		.step-one
+		{
+		  text-align : center;
+		  width      : 33.333%;
+		  color      : $secondTXTColor;
+		  span
+		  {
+			color       : $secondTXTColor;
+			font-family : raleway-medium, sans-serif;
+			margin-left : 5px;
+		  }
+		}
+	  }
+	  .checkout-body
+	  {
+		.title
+		{
+		  font-size     : 18px;
+		  font-family   : raleway-medium, sans-serif;
+		  margin-bottom : 30px;
+		}
+		.country-box
+		{
+		  > p
+		  {
+			margin-bottom : 10px;
+		  }
+		  .country-input
+		  {
+			margin-bottom : 30px;
+			font-size     : 0;
+			p
+			{
+			  font-size     : 16px;
+			  float         : left;
+			  background    : $secondTXTColor;
+			  border-radius : 0.5rem 0 0 0.5rem;
+			  height        : 45px;
+			  line-height   : 45px;
+			  width         : 95%;
+			  padding-left  : 20px;
+			}
+			i
+			{
+			  float         : right;
+			  line-height   : 45px;
+			  font-size     : 18px;
+			  background    : $secondTXTColor;
+			  border-radius : 0 0.5rem 0.5rem 0;
+			  width         : 5%;
+			  padding-right : 20px;
+			}
+		  }
+		}
+		.set-location
+		{
+		  font-family    : raleway-medium, sans-serif;
+		  padding-bottom : 20px;
+		  margin-bottom  : 20px;
+		  border-bottom  : 1px solid $secondTXTColor;
+		}
+		.recipient
+		{
+		  margin-bottom : 20px;
+		  p
+		  {
+			margin-bottom : 10px;
+		  }
+		  input
+		  {
+			background    : $secondTXTColor;
+			border-radius : 0.5rem;
+			width         : 100%;
+			height        : 45px;
+			border        : none;
+			box-shadow    : none;
+			padding-left  : 20px;
+		  }
+		}
+		.address
+		{
+		  font-size : 0;
+		  > p
+		  {
+			font-size     : 1rem;
+			margin-bottom : 10px;
+		  }
+		  input
+		  {
+			font-size     : 1rem;
+			width         : 49%;
+			height        : 45px;
+			background    : $secondTXTColor;
+			border-radius : 0.5rem;
+			border        : none;
+			box-shadow    : none;
+			padding-left  : 20px;
+		  }
+		  i
+		  {
+			font-size        : 1rem;
+			background-color : $secondTXTColor;
+		  }
+		  .input-con
+		  {
+			.city
+			{
+			  width        : 49%;
+			  display      : inline-block;
+			  margin-right : 2%;
+			  input
+			  {
+				width         : 90%;
+				border-radius : 0.5rem 0 0 0.5rem;
+			  }
+			  i
+			  {
+				width         : 10%;
+				line-height   : 45px;
+				height        : 45px;
+				border-radius : 0 0.5rem 0.5rem 0;
+			  }
+			}
+			.country-box
+			{
+			  display     : inline-block;
+			  width       : 49%;
+			  margin-left : 2%;
+			  input
+			  {
+				width         : 90%;
+				border-radius : 0.5rem 0 0 0.5rem;
+			  }
+			  i
+			  {
+				width         : 10%;
+				line-height   : 45px;
+				height        : 45px;
+				border-radius : 0 0.5rem 0.5rem 0;
+			  }
+			}
+			&:first-of-type
+			{
+			  input:first-of-type
+			  {
+				margin-right : 2%;
+			  }
+			}
+			&:not(:last-of-type)
+			{
+			  margin-bottom : 15px;
+			}
+		  }
+		}
+		.phone-con
+		{
+		  p
+		  {
+			margin : 20px 0 10px 0;
+		  }
+		  input
+		  {
+			width         : 100%;
+			height        : 45px;
+			background    : $secondTXTColor;
+			border-radius : 0.5rem;
+			border        : none;
+			box-shadow    : none;
+			padding-left  : 20px;
+		  }
+		}
+		.delivery-method
+		{
+		  margin-top : 30px;
+		  .title
+		  {
+			font-family   : raleway-medium, sans-serif;
+			margin-bottom : 10px;
+		  }
+		  > p
+		  {
+			margin-bottom : 20px;
+		  }
+		  .methodOne, .methodTwo, .methodThree
+		  {
+			margin-bottom : 15px;
+			.custom-radio
+			{
+			  width          : 20px;
+			  height         : 20px;
+			  border         : 3px solid $secondBGColor;
+			  border-radius  : 100%;
+			  display        : inline-block;
+			  vertical-align : top;
+			  text-align     : center;
+			  span
+			  {
+				width          : 10px;
+				height         : 10px;
+				background     : $mainBGColor;
+				border-radius  : 100%;
+				display        : inline-block;
+				vertical-align : text-top;
+			  }
+			}
+			.delivery-details
+			{
+			  display     : inline-block;
+			  width       : 90%;
+			  margin-left : 10px;
+			  p
+			  {
+				&:first-of-type
+				{
+				  float         : left;
+				  margin-bottom : 10px;
+				}
+				&:nth-of-type(2)
+				{
+				  float : right;
+				}
+			  }
+			}
+		  }
+		}
+	  }
+	  button
+	  {
+		width         : 100%;
+		height        : 60px;
+		color         : $secondTXTColor;
+		background    : linear-gradient(90deg, $mainBGColor 0%, $secondBGColor 100%);
+		font-size     : 18px;
+		font-family   : raleway-medium, sans-serif;
+		border-radius : 0.5rem;
+		border        : none;
+		cursor        : pointer;
+		margin-top    : 15px;
+	  }
+	}
+	.order-summery
+	{
+	  background    : #FFF;
+	  box-shadow    : 0 0 6px 0 rgba(0, 0, 0, 0.2);
+	  border-radius : 0.5rem;
+	  overflow      : hidden;
+	  position      : relative;
+	  padding       : 30px 20px;
+	  text-align    : center;
+	  hr
+	  {
+		width        : 60%;
+		border-color : $althColor;
+		margin       : 15px auto;
+	  }
+	  .order-information
+	  {
+		img
+		{
+		  width          : 64px;
+		  vertical-align : top;
+		}
+		div
+		{
+		  display     : inline-block;
+		  text-align  : left;
+		  margin-left : 10px;
+		  p
+		  {
+			margin-bottom : 10px;
+			&:last-of-type
+			{
+			  margin-bottom : 5px;
+			  float         : right;
+			  text-align    : right;
+			}
+		  }
+		}
+	  }
+	  div:not(.order-information)
+	  {
+		text-align : left;
+		p
+		{
+		  &:first-of-type
+		  {
+			float : left;
+		  }
+		  &:last-of-type
+		  {
+			float : right;
+		  }
+		}
+	  }
+	}
+  }
 }

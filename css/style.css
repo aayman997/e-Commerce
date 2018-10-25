@@ -943,5 +943,218 @@ body {
       margin-left: 10px; }
       body.cartPage .cart-body .sec-payment p {
         width: 200px; }
+  body.checkoutPage {
+    height: 5000px; }
+    body.checkoutPage .small-nav {
+      background: linear-gradient(90deg, #1ABC9C 0%, #27AE60 100%);
+      height: 140px;
+      position: sticky;
+      top: 0;
+      width: 100%;
+      z-index: 2;
+      text-align: center;
+      margin-bottom: 60px; }
+      body.checkoutPage .small-nav i {
+        color: #ECF0F1;
+        font-size: 35px; }
+      body.checkoutPage .small-nav p {
+        color: #ECF0F1;
+        font-size: 25px;
+        font-family: raleway-medium, sans-serif; }
+    body.checkoutPage .delivery-step {
+      background: #FFF;
+      box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
+      border-radius: 0.5rem;
+      overflow: hidden;
+      position: relative;
+      padding: 60px 30px; }
+      body.checkoutPage .delivery-step .steps-meter {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(90deg, #1ABC9C 0%, #27AE60 20%, #FFF 33.3333%, #FFF 100%);
+        padding: 4px 0; }
+        body.checkoutPage .delivery-step .steps-meter .step-one {
+          text-align: center;
+          width: 33.333%;
+          color: #ECF0F1; }
+          body.checkoutPage .delivery-step .steps-meter .step-one span {
+            color: #ECF0F1;
+            font-family: raleway-medium, sans-serif;
+            margin-left: 5px; }
+      body.checkoutPage .delivery-step .checkout-body .title {
+        font-size: 18px;
+        font-family: raleway-medium, sans-serif;
+        margin-bottom: 30px; }
+      body.checkoutPage .delivery-step .checkout-body .country-box > p {
+        margin-bottom: 10px; }
+      body.checkoutPage .delivery-step .checkout-body .country-box .country-input {
+        margin-bottom: 30px;
+        font-size: 0; }
+        body.checkoutPage .delivery-step .checkout-body .country-box .country-input p {
+          font-size: 16px;
+          float: left;
+          background: #ECF0F1;
+          border-radius: 0.5rem 0 0 0.5rem;
+          height: 45px;
+          line-height: 45px;
+          width: 95%;
+          padding-left: 20px; }
+        body.checkoutPage .delivery-step .checkout-body .country-box .country-input i {
+          float: right;
+          line-height: 45px;
+          font-size: 18px;
+          background: #ECF0F1;
+          border-radius: 0 0.5rem 0.5rem 0;
+          width: 5%;
+          padding-right: 20px; }
+      body.checkoutPage .delivery-step .checkout-body .set-location {
+        font-family: raleway-medium, sans-serif;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #ECF0F1; }
+      body.checkoutPage .delivery-step .checkout-body .recipient {
+        margin-bottom: 20px; }
+        body.checkoutPage .delivery-step .checkout-body .recipient p {
+          margin-bottom: 10px; }
+        body.checkoutPage .delivery-step .checkout-body .recipient input {
+          background: #ECF0F1;
+          border-radius: 0.5rem;
+          width: 100%;
+          height: 45px;
+          border: none;
+          box-shadow: none;
+          padding-left: 20px; }
+      body.checkoutPage .delivery-step .checkout-body .address {
+        font-size: 0; }
+        body.checkoutPage .delivery-step .checkout-body .address > p {
+          font-size: 1rem;
+          margin-bottom: 10px; }
+        body.checkoutPage .delivery-step .checkout-body .address input {
+          font-size: 1rem;
+          width: 49%;
+          height: 45px;
+          background: #ECF0F1;
+          border-radius: 0.5rem;
+          border: none;
+          box-shadow: none;
+          padding-left: 20px; }
+        body.checkoutPage .delivery-step .checkout-body .address i {
+          font-size: 1rem;
+          background-color: #ECF0F1; }
+        body.checkoutPage .delivery-step .checkout-body .address .input-con .city {
+          width: 49%;
+          display: inline-block;
+          margin-right: 2%; }
+          body.checkoutPage .delivery-step .checkout-body .address .input-con .city input {
+            width: 90%;
+            border-radius: 0.5rem 0 0 0.5rem; }
+          body.checkoutPage .delivery-step .checkout-body .address .input-con .city i {
+            width: 10%;
+            line-height: 45px;
+            height: 45px;
+            border-radius: 0 0.5rem 0.5rem 0; }
+        body.checkoutPage .delivery-step .checkout-body .address .input-con .country-box {
+          display: inline-block;
+          width: 49%;
+          margin-left: 2%; }
+          body.checkoutPage .delivery-step .checkout-body .address .input-con .country-box input {
+            width: 90%;
+            border-radius: 0.5rem 0 0 0.5rem; }
+          body.checkoutPage .delivery-step .checkout-body .address .input-con .country-box i {
+            width: 10%;
+            line-height: 45px;
+            height: 45px;
+            border-radius: 0 0.5rem 0.5rem 0; }
+        body.checkoutPage .delivery-step .checkout-body .address .input-con:first-of-type input:first-of-type {
+          margin-right: 2%; }
+        body.checkoutPage .delivery-step .checkout-body .address .input-con:not(:last-of-type) {
+          margin-bottom: 15px; }
+      body.checkoutPage .delivery-step .checkout-body .phone-con p {
+        margin: 20px 0 10px 0; }
+      body.checkoutPage .delivery-step .checkout-body .phone-con input {
+        width: 100%;
+        height: 45px;
+        background: #ECF0F1;
+        border-radius: 0.5rem;
+        border: none;
+        box-shadow: none;
+        padding-left: 20px; }
+      body.checkoutPage .delivery-step .checkout-body .delivery-method {
+        margin-top: 30px; }
+        body.checkoutPage .delivery-step .checkout-body .delivery-method .title {
+          font-family: raleway-medium, sans-serif;
+          margin-bottom: 10px; }
+        body.checkoutPage .delivery-step .checkout-body .delivery-method > p {
+          margin-bottom: 20px; }
+        body.checkoutPage .delivery-step .checkout-body .delivery-method .methodOne, body.checkoutPage .delivery-step .checkout-body .delivery-method .methodTwo, body.checkoutPage .delivery-step .checkout-body .delivery-method .methodThree {
+          margin-bottom: 15px; }
+          body.checkoutPage .delivery-step .checkout-body .delivery-method .methodOne .custom-radio, body.checkoutPage .delivery-step .checkout-body .delivery-method .methodTwo .custom-radio, body.checkoutPage .delivery-step .checkout-body .delivery-method .methodThree .custom-radio {
+            width: 20px;
+            height: 20px;
+            border: 3px solid #27AE60;
+            border-radius: 100%;
+            display: inline-block;
+            vertical-align: top;
+            text-align: center; }
+            body.checkoutPage .delivery-step .checkout-body .delivery-method .methodOne .custom-radio span, body.checkoutPage .delivery-step .checkout-body .delivery-method .methodTwo .custom-radio span, body.checkoutPage .delivery-step .checkout-body .delivery-method .methodThree .custom-radio span {
+              width: 10px;
+              height: 10px;
+              background: #1ABC9C;
+              border-radius: 100%;
+              display: inline-block;
+              vertical-align: text-top; }
+          body.checkoutPage .delivery-step .checkout-body .delivery-method .methodOne .delivery-details, body.checkoutPage .delivery-step .checkout-body .delivery-method .methodTwo .delivery-details, body.checkoutPage .delivery-step .checkout-body .delivery-method .methodThree .delivery-details {
+            display: inline-block;
+            width: 90%;
+            margin-left: 10px; }
+            body.checkoutPage .delivery-step .checkout-body .delivery-method .methodOne .delivery-details p:first-of-type, body.checkoutPage .delivery-step .checkout-body .delivery-method .methodTwo .delivery-details p:first-of-type, body.checkoutPage .delivery-step .checkout-body .delivery-method .methodThree .delivery-details p:first-of-type {
+              float: left;
+              margin-bottom: 10px; }
+            body.checkoutPage .delivery-step .checkout-body .delivery-method .methodOne .delivery-details p:nth-of-type(2), body.checkoutPage .delivery-step .checkout-body .delivery-method .methodTwo .delivery-details p:nth-of-type(2), body.checkoutPage .delivery-step .checkout-body .delivery-method .methodThree .delivery-details p:nth-of-type(2) {
+              float: right; }
+      body.checkoutPage .delivery-step button {
+        width: 100%;
+        height: 60px;
+        color: #ECF0F1;
+        background: linear-gradient(90deg, #1ABC9C 0%, #27AE60 100%);
+        font-size: 18px;
+        font-family: raleway-medium, sans-serif;
+        border-radius: 0.5rem;
+        border: none;
+        cursor: pointer;
+        margin-top: 15px; }
+    body.checkoutPage .order-summery {
+      background: #FFF;
+      box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
+      border-radius: 0.5rem;
+      overflow: hidden;
+      position: relative;
+      padding: 30px 20px;
+      text-align: center; }
+      body.checkoutPage .order-summery hr {
+        width: 60%;
+        border-color: #D9D9D9;
+        margin: 15px auto; }
+      body.checkoutPage .order-summery .order-information img {
+        width: 64px;
+        vertical-align: top; }
+      body.checkoutPage .order-summery .order-information div {
+        display: inline-block;
+        text-align: left;
+        margin-left: 10px; }
+        body.checkoutPage .order-summery .order-information div p {
+          margin-bottom: 10px; }
+          body.checkoutPage .order-summery .order-information div p:last-of-type {
+            margin-bottom: 5px;
+            float: r;
+            text-align: right; }
+      body.checkoutPage .order-summery div:not(.order-information) {
+        text-align: left; }
+        body.checkoutPage .order-summery div:not(.order-information) p:first-of-type {
+          float: left; }
+        body.checkoutPage .order-summery div:not(.order-information) p:last-of-type {
+          float: right; }
 
 /*# sourceMappingURL=style.css.map */
