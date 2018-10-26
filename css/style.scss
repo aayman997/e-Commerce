@@ -51,9 +51,10 @@ $vHeight : 100vh;
 */
 *
 {
-  outline     : none;
-  color       : $mainTXTColor;
-  font-family : raleway-Regular, sans-serif;
+  outline        : none;
+  color          : $mainTXTColor;
+  font-family    : raleway-Regular, sans-serif;
+  text-transform : capitalize;
 }
 
 p
@@ -2107,6 +2108,204 @@ body
 		border        : none;
 		cursor        : pointer;
 		margin-top    : 15px;
+	  }
+	}
+	.summery-step
+	{
+	  background    : #FFF;
+	  box-shadow    : 0 0 6px 0 rgba(0, 0, 0, 0.2);
+	  border-radius : 0.5rem;
+	  overflow      : hidden;
+	  position      : relative;
+	  padding       : 60px 30px;
+	  .steps-meter
+	  {
+		position   : absolute;
+		top        : 0;
+		left       : 0;
+		right      : 0;
+		background : linear-gradient(90deg, $mainBGColor 0%, $secondBGColor 100%);
+		padding    : 4px 0;
+		.step-three
+		{
+		  text-align : center;
+		  color      : $secondTXTColor;
+		  span
+		  {
+			color       : $secondTXTColor;
+			font-family : raleway-medium, sans-serif;
+			margin-left : 5px;
+		  }
+		}
+	  }
+	  .checkout-body
+	  {
+		.title
+		{
+		  margin-bottom : 30px;
+		  span
+		  {
+			display : block;
+			&:first-of-type
+			{
+			  font-family    : raleway-medium, sans-serif;
+			  font-size      : 18px;
+			  padding-bottom : 10px;
+			  border-bottom  : 1px solid #707070;
+			  margin-bottom  : 20px;
+			}
+		  }
+		}
+		.summery-body
+		{
+		  .delivery-box
+		  {
+			margin-bottom : 30px;
+			.title
+			{
+			  margin-bottom : 20px;
+			  font-family   : raleway-medium, sans-serif;
+			}
+			.delivery-information
+			{
+			  padding       : 15px;
+			  background    : $secondTXTColor;
+			  border-radius : 0.5rem;
+			  p:not(:last-of-type)
+			  {
+				margin-bottom : 10px;
+			  }
+			}
+		  }
+		  .payment-box
+		  {
+			margin-bottom : 30px;
+			.title
+			{
+			  margin-bottom : 20px;
+			  font-family   : raleway-medium, sans-serif;
+			}
+			.delivery-information
+			{
+			  padding       : 15px;
+			  background    : $secondTXTColor;
+			  border-radius : 0.5rem;
+			  p:not(:last-of-type)
+			  {
+				margin-bottom : 10px;
+			  }
+			}
+		  }
+		  .gift-box
+		  {
+			padding       : 15px;
+			background    : $secondTXTColor;
+			border-radius : 0.5rem;
+			margin-bottom : 30px;
+			.custom-checkbox
+			{
+			  display        : inline-block;
+			  width          : 30px;
+			  height         : 30px;
+			  border-radius  : 4px;
+			  background     : none;
+			  border         : 3px solid $secondBGColor;
+			  vertical-align : middle;
+			  margin-right   : 15px;
+			}
+			p
+			{
+			  display : inline-block;
+			}
+		  }
+		  .notice-box
+		  {
+			padding       : 15px;
+			background    : $secondTXTColor;
+			border-radius : 0.5rem;
+			.custom-checkbox
+			{
+			  display        : inline-block;
+			  width          : 30px;
+			  height         : 30px;
+			  border-radius  : 4px;
+			  background     : none;
+			  border         : 3px solid $secondBGColor;
+			  vertical-align : middle;
+			  margin-right   : 15px;
+			  text-align     : center;
+			  i
+			  {
+				color : $mainBGColor;
+			  }
+			}
+			> p
+			{
+			  display : inline-block;
+			}
+			.notice-body
+			{
+			  > p
+			  {
+				text-align : justify;
+				margin     : 15px 0;
+				font-size  : 14px;
+			  }
+			  .notice-input
+			  {
+				background    : #FFF;
+				border-radius : 0.5rem;
+				padding       : 15px;
+				p
+				{
+				  float : left;
+				}
+				i
+				{
+				  float : right;
+				}
+			  }
+			}
+		  }
+		  .terms
+		  {
+			margin : 30px 0;
+			.custom-checkbox
+			{
+			  display        : inline-block;
+			  width          : 30px;
+			  height         : 30px;
+			  border-radius  : 4px;
+			  background     : none;
+			  border         : 3px solid $secondBGColor;
+			  vertical-align : top;
+			  margin-right   : 15px;
+			}
+			p
+			{
+			  display : inline-block;
+			  width   : 90%;
+			}
+		  }
+		}
+		button
+		{
+		  width         : 100%;
+		  height        : 60px;
+		  color         : $secondTXTColor;
+		  background    : linear-gradient(90deg, $mainBGColor 0%, $secondBGColor 100%);
+		  font-size     : 18px;
+		  font-family   : raleway-medium, sans-serif;
+		  border-radius : 0.5rem;
+		  border        : none;
+		  cursor        : pointer;
+		  text-align    : center;
+		  i
+		  {
+			margin-left : 10px;
+			color       : $secondTXTColor;
+		  }
+		}
 	  }
 	}
 	.small-footer
