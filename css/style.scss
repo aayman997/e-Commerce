@@ -1578,7 +1578,6 @@ body
   /* End Cart Page */
   &.checkoutPage
   {
-	height : 5000px;
 	.small-nav
 	{
 	  background    : linear-gradient(90deg, $mainBGColor 0%, $secondBGColor 100%);
@@ -1908,6 +1907,244 @@ body
 		  &:last-of-type
 		  {
 			float : right;
+		  }
+		}
+	  }
+	}
+	.payment-step
+	{
+	  background    : #FFF;
+	  box-shadow    : 0 0 6px 0 rgba(0, 0, 0, 0.2);
+	  border-radius : 0.5rem;
+	  overflow      : hidden;
+	  position      : relative;
+	  padding       : 60px 30px;
+	  .steps-meter
+	  {
+		position   : absolute;
+		top        : 0;
+		left       : 0;
+		right      : 0;
+		background : linear-gradient(90deg, $mainBGColor 0%, $secondBGColor 40%, #FFF 66.6666%, #FFF 100%);
+		padding    : 4px 0;
+		.step-two
+		{
+		  text-align : center;
+		  width      : 66.6666%;
+		  color      : $secondTXTColor;
+		  span
+		  {
+			color       : $secondTXTColor;
+			font-family : raleway-medium, sans-serif;
+			margin-left : 5px;
+		  }
+		}
+	  }
+	  .checkout-body
+	  {
+		.title
+		{
+		  margin-bottom : 30px;
+		  span
+		  {
+			display : block;
+			&:first-of-type
+			{
+			  font-size     : 18px;
+			  font-family   : raleway-medium, sans-serif;
+			  margin-bottom : 10px;
+			}
+		  }
+		}
+		.payment-methods
+		{
+		  .payment-method-card
+		  {
+			background    : $secondTXTColor;
+			padding       : 10px 20px;
+			border-radius : 0.5rem;
+			.radio-con
+			{
+			  float : left;
+			  .custom-radio
+			  {
+				width          : 20px;
+				height         : 20px;
+				border         : 3px solid $secondBGColor;
+				border-radius  : 100%;
+				display        : inline-block;
+				vertical-align : top;
+				text-align     : center;
+				span
+				{
+				  width          : 10px;
+				  height         : 10px;
+				  background     : $mainBGColor;
+				  border-radius  : 100%;
+				  display        : inline-block;
+				  vertical-align : text-top;
+				}
+			  }
+			  p
+			  {
+				display     : inline-block;
+				margin-left : 10px;
+			  }
+			}
+			.cards
+			{
+			  float : right;
+			  i
+			  {
+				font-size : 30px;
+				color     : $secondBGColor;
+				&:not(:last-of-type)
+				{
+				  margin-right : 5px;
+				}
+			  }
+			}
+			.payment-method-body
+			{
+			  padding : 20px;
+			  img
+			  {
+				display       : block;
+				margin        : 0 auto 30px auto;
+				border-radius : 1rem;
+			  }
+			  .input-con
+			  {
+				p
+				{
+				  margin-bottom : 5px;
+				}
+				input
+				{
+				  background    : #FFF;
+				  border-radius : 0.5rem;
+				  width         : 100%;
+				  height        : 45px;
+				  border        : none;
+				  box-shadow    : none;
+				  padding-left  : 20px;
+				}
+				.two-input
+				{
+				  font-size : 0;
+				  input
+				  {
+					width     : 49%;
+					font-size : 1rem;
+					&:last-of-type
+					{
+					  margin-left : 2%;
+					}
+				  }
+				}
+				&:not(:last-of-type)
+				{
+				  margin-bottom : 15px;
+				}
+			  }
+			}
+		  }
+		  .payment-method-paypal
+		  {
+			background    : $secondTXTColor;
+			padding       : 10px 20px;
+			border-radius : 0.5rem;
+			margin        : 30px 0;
+			.radio-con
+			{
+			  float : left;
+			  .custom-radio
+			  {
+				width          : 20px;
+				height         : 20px;
+				border         : 3px solid $secondBGColor;
+				border-radius  : 100%;
+				display        : inline-block;
+				vertical-align : top;
+				text-align     : center;
+				span
+				{
+				  width          : 10px;
+				  height         : 10px;
+				  background     : $mainBGColor;
+				  border-radius  : 100%;
+				  display        : inline-block;
+				  vertical-align : text-top;
+				}
+			  }
+			  p
+			  {
+				display     : inline-block;
+				margin-left : 10px;
+			  }
+			}
+			.cards
+			{
+			  float : right;
+			  i
+			  {
+				font-size : 30px;
+				color     : $secondBGColor;
+			  }
+			}
+		  }
+		}
+	  }
+	  button
+	  {
+		width         : 100%;
+		height        : 60px;
+		color         : $secondTXTColor;
+		background    : linear-gradient(90deg, $mainBGColor 0%, $secondBGColor 100%);
+		font-size     : 18px;
+		font-family   : raleway-medium, sans-serif;
+		border-radius : 0.5rem;
+		border        : none;
+		cursor        : pointer;
+		margin-top    : 15px;
+	  }
+	}
+	.small-footer
+	{
+	  background : $althSColor;
+	  margin-top : 60px;
+	  height     : 140px;
+	  text-align : center;
+	  font-size  : 18px;
+	  a
+	  {
+		margin-bottom : 15px;
+		display       : inline-block;
+		color         : $mainBGColor;
+	  }
+	  p
+	  {
+		&:first-of-type
+		{
+		  margin-bottom : 15px;
+		  span
+		  {
+			&:first-of-type
+			{
+			  margin-right : 10px;
+			  font-family  : raleway-medium, sans-serif;
+			  i
+			  {
+				margin-right : 5px;
+			  }
+			}
+		  }
+		}
+		&:last-of-type
+		{
+		  span:first-of-type
+		  {
+			margin-right : 15px;
 		  }
 		}
 	  }

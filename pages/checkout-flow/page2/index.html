@@ -31,82 +31,63 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-5">
-					<div class="delivery-step">
+					<div class="payment-step">
 						<div class="steps-meter">
-							<div class="step-one">Step 1 Of 3 <span>Delivery</span></div>
+							<div class="step-two">Step 2 Of 3 <span>Payment</span></div>
 						</div>
 						<div class="checkout-body">
-							<p class="title">Delivery Address</p>
-							<div class="country-box">
-								<p>Destination Country</p>
-								<div class="country-input">
-									<p>Canada</p>
-									<i class="fas fa-chevron-down"></i>
+							<p class="title">
+								<span>Payment Type</span>
+								<span>Please Select Your Payment Type:</span>
+							</p>
+							<div class="payment-methods">
+								<div class="payment-method-card">
+									<div class="radio-con">
+										<div class="custom-radio"><span></span></div>
+										<p>pay By Card</p>
+									</div>
+									<div class="cards">
+										<i class="fab fa-cc-mastercard"></i>
+										<i class="fab fa-cc-visa"></i>
+										<i class="fab fa-cc-amex"></i>
+										<i class="fab fa-cc-discover"></i>
+									</div>
+									<div class="clearfix"></div>
+									<div class="payment-method-body">
+										<img class="img-fluid" src="../../../img/CreditCardPayment.jpg">
+										<div class="input-con">
+											<p>Name On Card</p>
+											<input type="text" title="Name">
+										</div>
+										<div class="input-con">
+											<p>Card Number</p>
+											<input type="text" title="Card Number">
+										</div>
+										<div class="input-con">
+											<p>Expiry Date</p>
+											<div class="two-input">
+												<input type="text" placeholder="Month">
+												<input type="text" placeholder="Year">
+											</div>
+										</div>
+										<div class="input-con">
+											<p>CVV</p>
+											<input type="text" title="CVV">
+										</div>
+									</div>
+								</div>
+								<div class="payment-method-paypal">
+									<div class="radio-con">
+										<div class="custom-radio"></div>
+										<p>payPal</p>
+									</div>
+									<div class="cards">
+										<i class="fab fa-cc-paypal"></i>
+									</div>
 									<div class="clearfix"></div>
 								</div>
 							</div>
-							<p class="set-location">Please Select A Location To Deliver To</p>
-							<div class="recipient">
-								<p>Recipient</p>
-								<input type="text" title="Recipient">
-							</div>
-							<div class="address">
-								<p>Delivery Address</p>
-								<div class="input-con">
-									<input type="text" placeholder="Street Address">
-									<input type="text" placeholder="Street Address Line 2">
-								</div>
-								<div class="input-con">
-									<div class="city">
-										<input type="text" placeholder="city">
-										<i class="fas fa-chevron-down"></i>
-									</div>
-									<input type="text" placeholder="Region">
-								</div>
-								<div class="input-con">
-									<input type="text" placeholder="Postal / Zip Code">
-									<div class="country-box">
-										<input type="text" placeholder="Country">
-										<i class="fas fa-chevron-down"></i>
-									</div>
-								</div>
-							</div>
-							<div class="phone-con">
-								<p>Phone Number</p>
-								<input type="text" title="phone">
-							</div>
-							<div class="delivery-method">
-								<p class="title">Delivery Method</p>
-								<p>All Delivery Times Are Estimated</p>
-								<div class="methodOne">
-									<div class="custom-radio"></div>
-									<div class="delivery-details">
-										<p>On Or Before Tuesday, September 25, 2018</p>
-										<p class="price">$6.52</p>
-										<div class="clearfix"></div>
-										<p>By UnTracked Delivery With Priority Dispatch</p>
-									</div>
-								</div>
-								<div class="methodTwo">
-									<div class="custom-radio"></div>
-									<div class="delivery-details">
-										<p>On Or Before Monday, September 24, 2018</p>
-										<p class="price">$2.70</p>
-										<div class="clearfix"></div>
-										<p>By Tracked Delivery To Canada By Courier</p>
-									</div>
-								</div>
-								<div class="methodThree">
-									<div class="custom-radio"><span></span></div>
-									<div class="delivery-details">
-										<p>On Or Before Wednesday, September 26, 2018</p>
-										<p class="price">$free</p>
-										<div class="clearfix"></div>
-										<p>By free UnTracked Delivery</p>
-									</div>
-								</div>
-							</div>
-							<button>Continue To Payment</button>
+							<button>Continue To Summery</button>
 						</div>
 					</div>
 				</div>
