@@ -2552,4 +2552,81 @@ body
 	  }
 	}
   }
+  &.profilePage
+  {
+	height : 5000px;
+	.profile-page-body
+	{
+	  margin-top : 50px;
+	  h4
+	  {
+		margin-bottom : 30px;
+	  }
+	  .orders-table
+	  {
+		background    : #FFF;
+		box-shadow    : 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+		border-radius : 0.5rem;
+		display       : flex;
+		flex-wrap     : wrap;
+		width         : 100%;
+		.order-col
+		{
+		  flex         : 0 0 16.6666%;
+		  max-width    : calc(100% / 6);
+		  border-right : 1px solid $secondTXTColor;
+		  margin-top   : 16px;
+		  p
+		  {
+			text-align : center;
+			&:not(:first-of-type)
+			{
+			  padding-top : 16px;
+			}
+			&:not(:last-of-type)
+			{
+			  border-bottom  : 1px solid $secondTXTColor;
+			  padding-bottom : 16px;
+			}
+		  }
+		  &:nth-of-type(1)
+		  {
+			p
+			{
+			  margin-left : 16px;
+			}
+		  }
+		  &:nth-of-type(6)
+		  {
+			border-right : none;
+			p
+			{
+			  margin-right : 16px;
+			  font-family  : raleway-black, sans-serif;
+			  font-size    : 16px;
+			}
+		  }
+		  &:nth-of-type(7)
+		  {
+			flex         : 0 0 100%;
+			max-width    : 100%;
+			border-right : none;
+			text-align   : center;
+			button
+			{
+			  width         : 260px;
+			  height        : 45px;
+			  background    : linear-gradient(90deg, $mainBGColor 0%, $secondBGColor 100%);
+			  border-radius : 0.5rem;
+			  border        : none;
+			  color         : $secondTXTColor;
+			  font-size     : 21px;
+			  cursor        : pointer;
+			  margin        : 30px 0;
+			}
+		  }
+		}
+	  }
+	}
+  }
 }
