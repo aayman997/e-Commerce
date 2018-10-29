@@ -1553,53 +1553,105 @@ body {
           margin-right: 5px; }
     body.signinPage .small-footer p:last-of-type span:first-of-type {
       margin-right: 15px; }
-  body.profilePage {
-    height: 5000px; }
-    body.profilePage .profile-page-body {
-      margin-top: 50px; }
-      body.profilePage .profile-page-body h4 {
-        margin-bottom: 30px; }
-      body.profilePage .profile-page-body .orders-table {
-        background: #FFF;
-        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
-        border-radius: 0.5rem;
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%; }
-        body.profilePage .profile-page-body .orders-table .order-col {
-          flex: 0 0 16.6666%;
-          max-width: calc(100% / 6);
-          border-right: 1px solid #ECF0F1;
-          margin-top: 16px; }
-          body.profilePage .profile-page-body .orders-table .order-col p {
-            text-align: center; }
-            body.profilePage .profile-page-body .orders-table .order-col p:not(:first-of-type) {
-              padding-top: 16px; }
-            body.profilePage .profile-page-body .orders-table .order-col p:not(:last-of-type) {
-              border-bottom: 1px solid #ECF0F1;
-              padding-bottom: 16px; }
-          body.profilePage .profile-page-body .orders-table .order-col:nth-of-type(1) p {
-            margin-left: 16px; }
-          body.profilePage .profile-page-body .orders-table .order-col:nth-of-type(6) {
-            border-right: none; }
-            body.profilePage .profile-page-body .orders-table .order-col:nth-of-type(6) p {
-              margin-right: 16px;
-              font-family: raleway-black, sans-serif;
-              font-size: 16px; }
-          body.profilePage .profile-page-body .orders-table .order-col:nth-of-type(7) {
-            flex: 0 0 100%;
-            max-width: 100%;
-            border-right: none;
-            text-align: center; }
-            body.profilePage .profile-page-body .orders-table .order-col:nth-of-type(7) button {
-              width: 260px;
-              height: 45px;
-              background: linear-gradient(90deg, #1ABC9C 0%, #27AE60 100%);
-              border-radius: 0.5rem;
-              border: none;
-              color: #ECF0F1;
-              font-size: 21px;
-              cursor: pointer;
-              margin: 30px 0; }
+  body.profilePage .profile-page-body {
+    margin-top: 50px; }
+    body.profilePage .profile-page-body h4 {
+      margin-bottom: 30px; }
+    body.profilePage .profile-page-body .orders-table {
+      background: #FFF;
+      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+      border-radius: 0.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%; }
+      body.profilePage .profile-page-body .orders-table .order-col {
+        flex: 0 0 16.6666%;
+        max-width: calc(100% / 6);
+        border-right: 1px solid #ECF0F1;
+        margin-top: 16px; }
+        body.profilePage .profile-page-body .orders-table .order-col p {
+          text-align: center; }
+          body.profilePage .profile-page-body .orders-table .order-col p:not(:first-of-type) {
+            padding-top: 16px; }
+          body.profilePage .profile-page-body .orders-table .order-col p:not(:last-of-type) {
+            border-bottom: 1px solid #ECF0F1;
+            padding-bottom: 16px; }
+        body.profilePage .profile-page-body .orders-table .order-col:nth-of-type(1) p {
+          margin-left: 16px; }
+        body.profilePage .profile-page-body .orders-table .order-col:nth-of-type(6) {
+          border-right: none; }
+          body.profilePage .profile-page-body .orders-table .order-col:nth-of-type(6) p {
+            margin-right: 16px;
+            font-family: raleway-black, sans-serif;
+            font-size: 16px; }
+        body.profilePage .profile-page-body .orders-table .order-col:nth-of-type(7) {
+          flex: 0 0 100%;
+          max-width: 100%;
+          border-right: none;
+          text-align: center; }
+          body.profilePage .profile-page-body .orders-table .order-col:nth-of-type(7) button {
+            width: 260px;
+            height: 45px;
+            background: linear-gradient(90deg, #1ABC9C 0%, #27AE60 100%);
+            border-radius: 0.5rem;
+            border: none;
+            color: #ECF0F1;
+            font-size: 21px;
+            cursor: pointer;
+            margin: 30px 0; }
+    body.profilePage .profile-page-body .wishlist, body.profilePage .profile-page-body .refer, body.profilePage .profile-page-body .alert-div {
+      background: #FFF;
+      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+      padding: 30px;
+      border-radius: 0.5rem;
+      margin-top: 40px; }
+      body.profilePage .profile-page-body .wishlist i, body.profilePage .profile-page-body .refer i, body.profilePage .profile-page-body .alert-div i {
+        font-size: 30px;
+        margin-bottom: 20px; }
+        body.profilePage .profile-page-body .wishlist i.fa-exchange-alt, body.profilePage .profile-page-body .refer i.fa-exchange-alt, body.profilePage .profile-page-body .alert-div i.fa-exchange-alt {
+          font-size: 20px; }
+      body.profilePage .profile-page-body .wishlist p:first-of-type, body.profilePage .profile-page-body .refer p:first-of-type, body.profilePage .profile-page-body .alert-div p:first-of-type {
+        color: #27AE60;
+        font-size: 18px;
+        margin-bottom: 10px; }
+    body.profilePage .profile-page-body hr {
+      margin: 40px 0;
+      border-top: 1px solid #D9D9D9; }
+    body.profilePage .profile-page-body .your-details h5 {
+      margin-bottom: 40px;
+      font-family: raleway-medium, sans-serif; }
+    body.profilePage .profile-page-body .your-details .address-book, body.profilePage .profile-page-body .your-details .your-cards, body.profilePage .profile-page-body .your-details .personal-details {
+      background: #FFF;
+      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+      padding: 30px;
+      border-radius: 0.5rem;
+      height: 360px; }
+      body.profilePage .profile-page-body .your-details .address-book .title, body.profilePage .profile-page-body .your-details .your-cards .title, body.profilePage .profile-page-body .your-details .personal-details .title {
+        float: left;
+        color: #27AE60;
+        font-size: 18px;
+        font-family: raleway-medium, sans-serif;
+        margin-bottom: 20px; }
+      body.profilePage .profile-page-body .your-details .address-book i, body.profilePage .profile-page-body .your-details .your-cards i, body.profilePage .profile-page-body .your-details .personal-details i {
+        font-size: 25px;
+        color: #27AE60;
+        float: right; }
+    body.profilePage .profile-page-body .your-details .address-book h6 {
+      margin-top: 10px;
+      margin-bottom: 5px;
+      font-family: raleway-black, sans-serif; }
+    body.profilePage .profile-page-body .your-details .your-cards img {
+      margin-top: 20px; }
+    body.profilePage .profile-page-body .your-details .personal-details > p:not(.title) {
+      margin-bottom: 10px;
+      font-family: raleway-medium, sans-serif; }
+      body.profilePage .profile-page-body .your-details .personal-details > p:not(.title):last-of-type {
+        margin-top: 10px; }
+    body.profilePage .profile-page-body .your-details .personal-details .details-con:not(:last-of-type) {
+      margin-bottom: 5px; }
+    body.profilePage .profile-page-body .your-details .personal-details .details-con p:first-of-type {
+      float: left; }
+    body.profilePage .profile-page-body .your-details .personal-details .details-con p:last-of-type {
+      float: right; }
 
 /*# sourceMappingURL=style.css.map */
