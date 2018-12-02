@@ -46,6 +46,8 @@ body {
   /* End Navbar-2 */
   /* Start Footer */
   /* End Footer */
+  /* Start Side Menu */
+  /* End Side Menu */
   /* End Style Shared With Other Pages */
   /* End Home Page */
   /* Start Category Page */
@@ -67,13 +69,15 @@ body {
       color: #ECF0F1; }
       body .navbar-1 .logo .logo-con {
         text-align: center; }
-        body .navbar-1 .logo .logo-con i {
+        body .navbar-1 .logo .logo-con i.fa-bicycle {
           width: 100%;
           color: #ECF0F1;
           font-size: 2.2rem; }
           @media screen and (min-width: 768px) and (max-width: 1024px) {
-            body .navbar-1 .logo .logo-con i {
+            body .navbar-1 .logo .logo-con i.fa-bicycle {
               font-size: 3rem; } }
+        body .navbar-1 .logo .logo-con i.fa-bars {
+          font-size: 2.2rem; }
     body .navbar-1 .search-box {
       width: 100%; }
       body .navbar-1 .search-box input {
@@ -156,15 +160,72 @@ body {
           color: #34495E; }
     body .navbar-2 .left-links {
       text-align: right; }
+  body .lg-navbar {
+    background: linear-gradient(90deg, #1ABC9C 0%, #27AE60 100%);
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    transition: height 0.4s ease-in-out; }
+    body .lg-navbar .top-row i {
+      font-size: 30px;
+      color: #ECF0F1; }
+    body .lg-navbar .top-row .logo-con {
+      text-align: center; }
+      body .lg-navbar .top-row .logo-con i.fa-bicycle {
+        font-size: 35px; }
+      body .lg-navbar .top-row .logo-con p {
+        font-size: 1rem;
+        color: #ECF0F1; }
+    body .lg-navbar .bottom-row {
+      padding-top: 15px; }
+      body .lg-navbar .bottom-row .search-box {
+        width: 100%; }
+        body .lg-navbar .bottom-row .search-box input {
+          border: none;
+          border-radius: 0.5rem 0 0 0.5rem;
+          width: 90%;
+          height: 45px;
+          background: #F5F5F5;
+          padding-left: 20px;
+          float: left; }
+          body .lg-navbar .bottom-row .search-box input::placeholder {
+            color: #D9D9D9; }
+        body .lg-navbar .bottom-row .search-box button {
+          float: left;
+          width: 10%;
+          height: 45px;
+          background: #F5F5F5;
+          border: none;
+          box-shadow: none;
+          border-radius: 0 0.5rem 0.5rem 0;
+          font-size: 21px;
+          line-height: 21px;
+          transition: background-color 0.2s ease-in-out;
+          cursor: pointer; }
+          body .lg-navbar .bottom-row .search-box button i {
+            color: #27AE60;
+            transition: color 0.2s ease-in-out; }
+          body .lg-navbar .bottom-row .search-box button:hover {
+            background: #27AE60; }
+            body .lg-navbar .bottom-row .search-box button:hover i {
+              color: #F5F5F5; }
+      body .lg-navbar .bottom-row i.fa-user {
+        font-size: 30px;
+        color: #ECF0F1; }
   body .footer {
     margin-top: 100px;
-    height: 300px;
+    padding: 1rem 0;
     background-color: #34495E; }
     body .footer .left-section h4, body .footer .center-section h4, body .footer .right-section h4 {
       font-family: raleway-medium, sans-serif;
       font-size: 20px;
       color: #1ABC9C;
       margin-bottom: 20px; }
+      @media screen and (max-width: 768px) {
+        body .footer .left-section h4, body .footer .center-section h4, body .footer .right-section h4 {
+          font-size: 16px; } }
     body .footer .left-section .footer-links, body .footer .center-section .footer-links, body .footer .right-section .footer-links {
       padding-left: 0;
       margin-bottom: 0;
@@ -184,12 +245,66 @@ body {
         border-radius: 0.5rem;
         font-size: 25px;
         text-align: center; }
+        @media screen and (max-width: 768px) {
+          body .footer .left-section .social-media a i {
+            width: 26px;
+            height: 26px;
+            line-height: 26px;
+            font-size: 17px; } }
       body .footer .left-section .social-media a:not(:last-of-type) {
         margin-right: 10px; }
     body .footer .copy-right {
       font-size: 18px;
       font-family: raleway-black, sans-serif;
       color: #1ABC9C; }
+  body .side-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    height: 0;
+    background: #ECF0F1;
+    border-bottom: 1px solid #F00;
+    overflow-y: scroll;
+    width: 0; }
+    body .side-menu .side-menu-con {
+      opacity: 0; }
+      body .side-menu .side-menu-con .close-menu {
+        background: #34495E;
+        text-align: right;
+        padding: 15px 0;
+        margin-bottom: 3rem; }
+        body .side-menu .side-menu-con .close-menu p {
+          float: right;
+          color: #ECF0F1;
+          font-size: 18px;
+          cursor: pointer; }
+          body .side-menu .side-menu-con .close-menu p i {
+            font-size: 20px;
+            color: #ECF0F1;
+            margin-left: 5px; }
+      body .side-menu .side-menu-con .section-con .sec-header {
+        border-bottom: 1px solid #707070;
+        padding-bottom: 10px;
+        margin: 15px 0; }
+        body .side-menu .side-menu-con .section-con .sec-header span {
+          float: left;
+          font-size: 20px;
+          font-family: raleway-medium, sans-serif; }
+        body .side-menu .side-menu-con .section-con .sec-header i {
+          float: right;
+          font-size: 18px; }
+      body .side-menu .side-menu-con .section-con .inner-sections {
+        padding-left: 10px;
+        margin-bottom: 0;
+        list-style: none; }
+        body .side-menu .side-menu-con .section-con .inner-sections li a {
+          margin-bottom: 5px;
+          color: #34495E;
+          font-size: 1rem; }
+        body .side-menu .side-menu-con .section-con .inner-sections.hidden {
+          display: none; }
   body.homePage {
     /* Start Home Page */
     /* Start Header */
@@ -203,8 +318,7 @@ body {
     body.homePage .header {
       background: url("../img/bicycle.jpg") fixed no-repeat center;
       background-size: cover;
-      position: relative;
-      top: 210px; }
+      position: relative; }
       body.homePage .header .card-img-overlay {
         background: rgba(0, 0, 0, 0.7); }
         body.homePage .header .card-img-overlay .header-text {
@@ -212,7 +326,6 @@ body {
           text-align: center; }
           body.homePage .header .card-img-overlay .header-text h2 {
             font-family: raleway-black, sans-serif;
-            font-size: 35px;
             margin-bottom: 60px; }
           body.homePage .header .card-img-overlay .header-text button {
             width: 260px;
