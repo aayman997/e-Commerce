@@ -77,12 +77,12 @@ if (window.innerWidth <= 768) {
 
 }
 $(".lg-navbar .fa-bars").on("click", function () {
-	$(".side-menu").animate({width: '100vw', "min-height": "100vh"}, 400);
+	$(".side-menu").animate({width: '100vw'}, 400);
 	$(".side-menu-con").delay(200).fadeTo(400, 1);
 });
 $(".side-menu .close-menu p").on("click", function () {
 	$(".side-menu-con").fadeTo(400, 0);
-	$(this).parents(".side-menu").delay(100).animate({width: '0', "min-height": "0"}, 400);
+	$(this).parents(".side-menu").delay(100).animate({width: '0'}, 400);
 });
 $(".sec-header").on("click", function () {
 	if ($(this).hasClass("opened")) {

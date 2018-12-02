@@ -261,12 +261,10 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
     z-index: 3;
-    height: 0;
     background: #ECF0F1;
     border-bottom: 1px solid #F00;
-    overflow-y: scroll;
+    min-height: 100vh;
     width: 0; }
     body .side-menu .side-menu-con {
       opacity: 0; }
@@ -283,7 +281,7 @@ body {
           body .side-menu .side-menu-con .close-menu p i {
             font-size: 20px;
             color: #ECF0F1;
-            margin-left: 5px; }
+            margin-left: 5px ""; }
       body .side-menu .side-menu-con .section-con .sec-header {
         border-bottom: 1px solid #707070;
         padding-bottom: 10px;
