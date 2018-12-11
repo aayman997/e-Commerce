@@ -1,7 +1,8 @@
 const homeHeader = $(".homePage .header"),
-	vph = window.innerHeight;
+	vph = window.innerHeight,
+	body = $("body");
 console.log(vph);
-if ($("body").hasClass("homePage")) {
+if ($(body).hasClass("homePage")) {
 	if (window.outerWidth > 768) {
 		const totalNavsHeight = $("#navBarOne").outerHeight() + $("#navBarTwo").outerHeight();
 		homeHeader.css({
@@ -73,29 +74,64 @@ function scrollFunction() {
 }
 
 //Side Menu Settings
-if (window.innerWidth <= 768) {
+let sideMenuHeight = $(".side-menu").height();
 
-}
-$(".lg-navbar .fa-bars").on("click", function () {
+$("sideMenuHeight").on("resize", function () {
+	$(body).height(sideMenuHeight);
+	$(body).css("overflow", "hidden");
+});
+
+function menuOpen() {
 	$(".side-menu").animate({width: '100vw'}, 400);
-	$(".side-menu-con").delay(200).fadeTo(400, 1);
-});
-$(".side-menu .close-menu p").on("click", function () {
-	$(".side-menu-con").fadeTo(400, 0);
+	$(".side-menu-con").delay(200).fadeTo(400, 1).trigger("menuOpened");
+}
+
+function menuClose() {
+	$(".side-menu-con").fadeTo(400, 0).trigger("menuClosed");
 	$(this).parents(".side-menu").delay(100).animate({width: '0'}, 400);
-});
+}
+
+$(".lg-navbar .fa-bars").on("click", menuOpen);
+$(".side-menu .close-menu p").on("click", menuClose);
+
 $(".sec-header").on("click", function () {
 	if ($(this).hasClass("opened")) {
-		$(this).removeClass("opened");
+		$(this).removeClass("opened").trigger("innerSectionOpened");
 		$(this).addClass("closed");
 		$(this).children("i").removeClass("fa-minus");
 		$(this).children("i").addClass("fa-plus");
 		$(this).siblings(".inner-sections").slideUp(200);
 	} else if ($(this).hasClass("closed")) {
-		$(this).removeClass("closed");
+		$(this).removeClass("closed").trigger("innerSectionOpened");
 		$(this).addClass("opened");
 		$(this).children("i").removeClass("fa-plus");
 		$(this).children("i").addClass("fa-minus");
 		$(this).siblings(".inner-sections").slideDown(200);
 	}
 });
+
+$(".side-menu-con").on("menuOpened", function () {
+	if (sideMenuHeight <= window.innerHeight) {
+		console.log(window.innerHeight);
+		$("body").css({
+			height: window.innerHeight,
+			overflow: "hidden"
+		});
+	} else if (sideMenuHeight > window.innerHeight) {
+		$(".sec-header").on("innerSectionOpened", function () {
+			$("body").css({
+				height: sideMenuHeight,
+				overflow: "hidden"
+			});
+		})
+	}
+});
+
+
+$(".side-menu-con").on("menuClosed", function () {
+	$("body").css({
+		height: "auto",
+		overflow: "scroll"
+	});
+});
+
