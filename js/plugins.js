@@ -77,18 +77,19 @@ function scrollFunction() {
 let sideMenuHeight = $(".side-menu").height();
 
 $("sideMenuHeight").on("resize", function () {
-	$(body).height(sideMenuHeight);
-	$(body).css("overflow", "hidden");
+	$("body").height(sideMenuHeight);
 });
 
 function menuOpen() {
 	$(".side-menu").animate({width: '100vw'}, 400);
 	$(".side-menu-con").delay(200).fadeTo(400, 1).trigger("menuOpened");
+	$("body").css("overflow", "hidden");
 }
 
 function menuClose() {
 	$(".side-menu-con").fadeTo(400, 0).trigger("menuClosed");
 	$(this).parents(".side-menu").delay(100).animate({width: '0'}, 400);
+	$("body").css("overflow", "scroll");
 }
 
 $(".lg-navbar .fa-bars").on("click", menuOpen);
@@ -101,37 +102,13 @@ $(".sec-header").on("click", function () {
 		$(this).children("i").removeClass("fa-minus");
 		$(this).children("i").addClass("fa-plus");
 		$(this).siblings(".inner-sections").slideUp(200);
+
 	} else if ($(this).hasClass("closed")) {
 		$(this).removeClass("closed").trigger("innerSectionOpened");
 		$(this).addClass("opened");
 		$(this).children("i").removeClass("fa-plus");
 		$(this).children("i").addClass("fa-minus");
 		$(this).siblings(".inner-sections").slideDown(200);
+
 	}
 });
-
-$(".side-menu-con").on("menuOpened", function () {
-	if (sideMenuHeight <= window.innerHeight) {
-		console.log(window.innerHeight);
-		$("body").css({
-			height: window.innerHeight,
-			overflow: "hidden"
-		});
-	} else if (sideMenuHeight > window.innerHeight) {
-		$(".sec-header").on("innerSectionOpened", function () {
-			$("body").css({
-				height: sideMenuHeight,
-				overflow: "hidden"
-			});
-		})
-	}
-});
-
-
-$(".side-menu-con").on("menuClosed", function () {
-	$("body").css({
-		height: "auto",
-		overflow: "scroll"
-	});
-});
-
