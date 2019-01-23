@@ -14,7 +14,7 @@
 </head>
 <body class="productPage">
 	<!-- Start NavBar-1 -->
-	<nav id="navBarOne" class="navbar-1">
+	<nav id="navBarOne" class="navbar-1 d-none d-lg-block">
 		<div class="container h-100">
 			<div class="row h-100">
 				<div class="col-2 my-auto">
@@ -54,7 +54,7 @@
 	<!-- End NavBar-1 -->
 
 	<!-- Start NavBar-2 -->
-	<nav id="navBarTwo" class="navbar-2">
+	<nav id="navBarTwo" class="navbar-2 d-none d-lg-block">
 		<div class="container h-100">
 			<div class="row h-100">
 				<div class="col-7 my-auto">
@@ -84,6 +84,44 @@
 	</nav>
 	<!-- End NavBar-2 -->
 
+	<!--  Start 768px NavBar -->
+	<section class="lg-navbar d-lg-none d-block">
+		<div class="container">
+			<div class="top-row">
+				<div class="row">
+					<div class="col-1 my-auto">
+						<i class="fas fa-bars"></i>
+					</div>
+					<div class="col-3 mx-auto">
+						<div class="logo-con">
+							<a href="#">
+								<i class="fas fa-bicycle"></i>
+								<p>Sports Store</p>
+							</a>
+						</div>
+					</div>
+					<div class="col-1 my-auto">
+						<i class="fas fa-shopping-cart"></i>
+					</div>
+				</div>
+			</div>
+			<div class="bottom-row">
+				<div class="row">
+					<div class="col-11">
+						<div class="search-box">
+							<input type="text" placeholder="Search">
+							<button><i class="fas fa-search"></i></button>
+						</div>
+					</div>
+					<div class="col-1 m-auto">
+						<i class="fas fa-user"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--  End 768px NavBar -->
+
 	<!-- Start Link -->
 	<section class="link">
 		<div class="container">
@@ -99,23 +137,39 @@
 	<section class="product">
 		<div class="container">
 			<div class="row">
-				<div class="col-1">
-					<div class="img-carousal">
-						<i class="fas fa-chevron-up"></i>
-						<img class="img-fluid" src="../../img/product-carousal/Shimano-105.jpg">
-						<img class="img-fluid" src="../../img/product-carousal/Shimano-105-rear.jpg">
-						<img class="img-fluid" src="../../img/product-carousal/Shimano-105-lever.jpg">
-						<img class="img-fluid" src="../../img/product-carousal/Shimano-105-brake.jpg">
-						<img class="img-fluid" src="../../img/product-carousal/Shimano-105-gear.jpg">
-						<i class="fas fa-chevron-down"></i>
+				<div class="col-lg-8 col-12">
+					<div class="product-img-gallery">
+						<div class="row">
+							<div class="col-lg-1 col-12 order-lg-0 order-1 gallery-imgs">
+								<div class="img-carousal">
+									<i class="fas fa-chevron-up"></i>
+									<img class="img-fluid"
+									     src="../../img/product-carousal/Shimano-105.jpg"
+									     alt="Shimano Groupset">
+									<img class="img-fluid"
+									     src="../../img/product-carousal/Shimano-105-rear.jpg"
+									     alt="Shimano Rear Derailleur">
+									<img class="img-fluid"
+									     src="../../img/product-carousal/Shimano-105-lever.jpg"
+									     alt="Shimano Lever">
+									<img class="img-fluid"
+									     src="../../img/product-carousal/Shimano-105-brake.jpg"
+									     alt="Shimano Brake">
+									<img class="img-fluid"
+									     src="../../img/product-carousal/Shimano-105-gear.jpg"
+									     alt="Shimano Gear">
+									<i class="fas fa-chevron-down"></i>
+								</div>
+							</div>
+							<div class="col-lg-7 col-12 order-lg-1 order-0 gallery-img">
+								<div class="product-img">
+									<img class="img-fluid" src="../../img/shimano-1.jpg" alt="Shimano Groupset">
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="col-7">
-					<div class="product-img">
-						<img class="img-fluid" src="../../img/shimano-1.jpg">
-					</div>
-				</div>
-				<div class="col-4">
+				<div class="col-lg-4 col-12">
 					<div class="product-details">
 						<h4>Shimano 105 5800 Groupset</h4>
 						<div class="price">
@@ -180,7 +234,7 @@
 			</div>
 			<div class="product-information">
 				<div class="row">
-					<div class="col-6">
+					<div class="col-lg-6 col-12">
 						<div class="Product-description">
 							<h5>Now in 11 speed, these components draw down technology from the Shimano Dura-Ace and
 								Ultegra groupsets.</h5>
@@ -204,7 +258,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-4 ml-auto">
+					<div class="col-lg-4 col-12 mt-lg-0 mt-4 ml-auto">
 						<div class="product-component">
 							<h5>Shimano 105 Groupset Components</h5>
 							<ul>
@@ -260,14 +314,14 @@
 					<div class="reviews-container">
 						<div class="review">
 							<div class="row">
-								<div class="col-2">
+								<div class="col-lg-2 col-3">
 									<div class="user">
 										<i class="fas fa-user"></i>
 										<p class="user-name">Nikmit</p>
 										<p class="country">Nafplion, Greece</p>
 									</div>
 								</div>
-								<div class="col-10">
+								<div class="col-lg-10 col-9">
 									<div class="customer-review">
 										<p class="review-title">Very Good Product</p>
 										<p class="review-date">Posted 17 March 2018</p>
@@ -308,14 +362,14 @@
 						</div>
 						<div class="review">
 							<div class="row">
-								<div class="col-2">
+								<div class="col-lg-2 col-3">
 									<div class="user">
 										<i class="fas fa-user"></i>
 										<p class="user-name">Nikmit</p>
 										<p class="country">Nafplion, Greece</p>
 									</div>
 								</div>
-								<div class="col-10">
+								<div class="col-lg-10 col-9">
 									<div class="customer-review">
 										<p class="review-title">Very Good Product</p>
 										<p class="review-date">Posted 17 March 2018</p>
@@ -356,14 +410,14 @@
 						</div>
 						<div class="review">
 							<div class="row">
-								<div class="col-2">
+								<div class="col-lg-2 col-3">
 									<div class="user">
 										<i class="fas fa-user"></i>
 										<p class="user-name">Nikmit</p>
 										<p class="country">Nafplion, Greece</p>
 									</div>
 								</div>
-								<div class="col-10">
+								<div class="col-lg-10 col-9">
 									<div class="customer-review">
 										<p class="review-title">Very Good Product</p>
 										<p class="review-date">Posted 17 March 2018</p>
@@ -402,6 +456,7 @@
 								</div>
 							</div>
 						</div>
+
 						<div class="reviews-navigator">
 							<a href="#">1</a>
 							<a href="#">2</a>
@@ -423,27 +478,27 @@
 				<div class="col-12">
 					<div class="owl-carousel owl-products">
 						<div class="owl-product">
-							<img src="../../img/category/wheelsImage.png">
+							<img src="../../img/category/wheelsImage.png" alt="Wheels">
 							<p class="title">Campagnolo Scirocco</p>
 							<P class="price">$360</P>
 						</div>
 						<div class="owl-product">
-							<img src="../../img/owl/helmet.png">
+							<img src="../../img/owl/helmet.png" alt="Helmet">
 							<p class="title">Giro Synthe Helmet</p>
 							<P class="price">$180</P>
 						</div>
 						<div class="owl-product">
-							<img src="../../img/owl/top.png">
+							<img src="../../img/owl/top.png" alt="T-Shirt">
 							<p class="title">Nalini AHS Naranco Jersey</p>
 							<P class="price">$90</P>
 						</div>
 						<div class="owl-product">
-							<img src="../../img/category/watchImage.png">
+							<img src="../../img/category/watchImage.png" alt="Watch">
 							<p class="title">Polar M430 GPS Running Watch</p>
 							<P class="price">$250</P>
 						</div>
 						<div class="owl-product">
-							<img src="../../img/category/shirtImage.png">
+							<img src="../../img/category/shirtImage.png" alt="T-Shirt">
 							<p class="title">Morvelo Blacklight Nth Series Jersey</p>
 							<P class="price">$95</P>
 						</div>
@@ -509,6 +564,127 @@
 	</section>
 	<!-- End Footer -->
 
+	<!-- Start Side Menu -->
+	<section id="sideMenu" class="side-menu">
+		<div class="side-menu-con">
+			<div class="close-menu">
+				<div class="container">
+					<p>Close Menu <i class="fas fa-times"></i></p>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<div class="sections">
+				<div class="container">
+					<div class="section-con">
+						<div class="sec-header opened">
+							<span>Cycle</span>
+							<i class="fas fa-minus"></i>
+							<div class="clearfix"></div>
+						</div>
+						<ul class="inner-sections">
+							<li><a href="#">Show All</a></li>
+							<li><a href="#">Bikes</a></li>
+							<li><a href="#">Bikes Parts</a></li>
+							<li><a href="#">Wheels, Tires And Tubes</a></li>
+							<li><a href="#">Bike Maintenance</a></li>
+							<li><a href="#">Apparel</a></li>
+							<li><a href="#">FootWear</a></li>
+							<li><a href="#">Bike Maintenance</a></li>
+							<li><a href="#">Bags</a></li>
+							<li><a href="#">Light</a></li>
+							<li><a href="#">Trainers</a></li>
+						</ul>
+					</div>
+					<div class="section-con">
+						<div class="sec-header opened">
+							<span>Running</span>
+							<i class="fas fa-minus"></i>
+							<div class="clearfix"></div>
+						</div>
+						<ul class="inner-sections">
+							<li><a href="#">Show All</a></li>
+							<li><a href="#">Apparel</a></li>
+							<li><a href="#">FootWear</a></li>
+							<li><a href="#">Bags</a></li>
+							<li><a href="#">Nutrition and Supplements</a></li>
+							<li><a href="#">Accessories</a></li>
+						</ul>
+					</div>
+					<div class="section-con">
+						<div class="sec-header closed">
+							<span>Swimming</span>
+							<i class="fas fa-plus"></i>
+							<div class="clearfix"></div>
+						</div>
+						<ul class="inner-sections hidden">
+							<li><a href="#">Show All</a></li>
+							<li><a href="#">SwimWear</a></li>
+							<li><a href="#">Wetsuits and Swimskins</a></li>
+							<li><a href="#">Goggles</a></li>
+							<li><a href="#">Nutrition and Supplements</a></li>
+							<li><a href="#">FootWear</a></li>
+							<li><a href="#">Bags</a></li>
+							<li><a href="#">Accessories</a></li>
+						</ul>
+					</div>
+					<div class="section-con">
+						<div class="sec-header closed">
+							<span>Cycle</span>
+							<i class="fas fa-plus"></i>
+							<div class="clearfix"></div>
+						</div>
+						<ul class="inner-sections hidden">
+							<li><a href="#">Show All</a></li>
+							<li><a href="#">Bikes</a></li>
+							<li><a href="#">Bikes Parts</a></li>
+							<li><a href="#">Wheels, Tires And Tubes</a></li>
+							<li><a href="#">Bike Maintenance</a></li>
+							<li><a href="#">Apparel</a></li>
+							<li><a href="#">FootWear</a></li>
+							<li><a href="#">Bike Maintenance</a></li>
+							<li><a href="#">Bags</a></li>
+							<li><a href="#">Light</a></li>
+							<li><a href="#">Trainers</a></li>
+						</ul>
+					</div>
+					<div class="section-con">
+						<div class="sec-header closed">
+							<span>Cycle</span>
+							<i class="fas fa-plus"></i>
+							<div class="clearfix"></div>
+						</div>
+						<ul class="inner-sections hidden">
+							<li><a href="#">Show All</a></li>
+							<li><a href="#">Bikes</a></li>
+							<li><a href="#">Bikes Parts</a></li>
+							<li><a href="#">Wheels, Tires And Tubes</a></li>
+							<li><a href="#">Bike Maintenance</a></li>
+							<li><a href="#">Apparel</a></li>
+							<li><a href="#">FootWear</a></li>
+							<li><a href="#">Bike Maintenance</a></li>
+							<li><a href="#">Bags</a></li>
+							<li><a href="#">Light</a></li>
+							<li><a href="#">Trainers</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="bottom-labels">
+				<div class="account-label">
+					<div class="container">
+						<a href="#">Your Account</a>
+					</div>
+				</div>
+				<div class="country-label">
+					<div class="container">
+						<button>Country / Language / Currency</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Side Menu -->
+
 	<div class="modal fade"
 	     id="addToBasket"
 	     tabindex="-1"
@@ -523,7 +699,7 @@
 					<span>Added To Your Basket</span>
 				</div>
 				<div class="product-information">
-					<img class="img-fluid" src="../../img/shimano-1.jpg">
+					<img class="img-fluid" src="../../img/shimano-1.jpg" alt="Shimano Groupset">
 					<div class="product-details">
 						<p class="title">Shimano 105 5800 Groupset</p>
 						<p class="size">Size: 170mm 50.34x11-32 Black</p>
@@ -550,6 +726,7 @@
 	<script src="../../js/jquery-3.3.1.min.js"></script>
 	<script src="../../js/bootstrap.bundle.min.js"></script>
 	<script src="../../js/owl.carousel.min.js"></script>
+	<!--<script src="../../js/fontawesome-all.min.js"></script> Svg Use Only-->
 	<script src="../../js/plugins.js"></script>
 	<!-- End Script -->
 </body>

@@ -14,7 +14,7 @@
 </head>
 <body class="profilePage">
 	<!-- Start NavBar-1 -->
-	<nav id="navBarOne" class="navbar-1">
+	<nav id="navBarOne" class="navbar-1 d-none d-lg-block">
 		<div class="container h-100">
 			<div class="row h-100">
 				<div class="col-2 my-auto">
@@ -52,8 +52,9 @@
 		</div>
 	</nav>
 	<!-- End NavBar-1 -->
+
 	<!-- Start NavBar-2 -->
-	<nav id="navBarTwo" class="navbar-2">
+	<nav id="navBarTwo" class="navbar-2 d-none d-lg-block">
 		<div class="container h-100">
 			<div class="row h-100">
 				<div class="col-7 my-auto">
@@ -83,6 +84,44 @@
 	</nav>
 	<!-- End NavBar-2 -->
 
+	<!--  Start 768px NavBar -->
+	<section class="lg-navbar d-lg-none d-block">
+		<div class="container">
+			<div class="top-row">
+				<div class="row">
+					<div class="col-1 my-auto">
+						<i class="fas fa-bars"></i>
+					</div>
+					<div class="col-3 mx-auto">
+						<div class="logo-con">
+							<a href="#">
+								<i class="fas fa-bicycle"></i>
+								<p>Sports Store</p>
+							</a>
+						</div>
+					</div>
+					<div class="col-1 my-auto">
+						<i class="fas fa-shopping-cart"></i>
+					</div>
+				</div>
+			</div>
+			<div class="bottom-row">
+				<div class="row">
+					<div class="col-11">
+						<div class="search-box">
+							<input type="text" placeholder="Search">
+							<button><i class="fas fa-search"></i></button>
+						</div>
+					</div>
+					<div class="col-1 m-auto">
+						<i class="fas fa-user"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--  End 768px NavBar -->
+
 	<!-- Start Profile Page Body -->
 	<section class="profile-page-body">
 		<div class="container">
@@ -93,7 +132,7 @@
 					<p>1052065185793</p>
 					<p>2163176296804</p>
 				</div>
-				<div class="order-col">
+				<div class="order-col d-lg-block d-none">
 					<p>Recipient</p>
 					<p>MRS. Anna</p>
 					<p>MR. Johan</p>
@@ -108,12 +147,12 @@
 					<p>Processing</p>
 					<p>Delivered</p>
 				</div>
-				<div class="order-col">
+				<div class="order-col d-lg-block d-none">
 					<p>Payment Method</p>
 					<p>Payed By Card</p>
 					<p>Cash On Delivery</p>
 				</div>
-				<div class="order-col">
+				<div class="order-col d-lg-block d-none">
 					<p>Total</p>
 					<p>468$</p>
 					<p>800$</p>
@@ -153,7 +192,7 @@
 			<div class="your-details">
 				<h5>Your Details</h5>
 				<div class="row">
-					<div class="col-4">
+					<div class="col-lg-4 mb-lg-0 mx-auto col-10 mb-4">
 						<div class="address-book">
 							<p class="title">Your Address Book</p>
 							<i class="fas fa-pen"></i>
@@ -170,16 +209,16 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-4">
+					<div class="col-lg-4 mb-lg-0 mx-auto col-10 mb-4">
 						<div class="your-cards">
 							<p class="title">Your Cards</p>
 							<i class="fas fa-pen"></i>
 							<div class="clearfix"></div>
 							<p>Default Card</p>
-							<img class="img img-fluid" src="../../img/CreditCardPayment.jpg">
+							<img class="img img-fluid" src="../../img/CreditCardPayment.jpg" alt="Credit Card">
 						</div>
 					</div>
-					<div class="col-4">
+					<div class="col-lg-4 mx-auto col-10">
 						<div class="personal-details">
 							<p class="title">Your Personal Details</p>
 							<i class="fas fa-pen"></i>
@@ -282,6 +321,127 @@
 		</div>
 	</section>
 	<!-- End Footer -->
+
+	<!-- Start Side Menu -->
+	<section id="sideMenu" class="side-menu">
+		<div class="side-menu-con">
+			<div class="close-menu">
+				<div class="container">
+					<p>Close Menu <i class="fas fa-times"></i></p>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<div class="sections">
+				<div class="container">
+					<div class="section-con">
+						<div class="sec-header opened">
+							<span>Cycle</span>
+							<i class="fas fa-minus"></i>
+							<div class="clearfix"></div>
+						</div>
+						<ul class="inner-sections">
+							<li><a href="#">Show All</a></li>
+							<li><a href="#">Bikes</a></li>
+							<li><a href="#">Bikes Parts</a></li>
+							<li><a href="#">Wheels, Tires And Tubes</a></li>
+							<li><a href="#">Bike Maintenance</a></li>
+							<li><a href="#">Apparel</a></li>
+							<li><a href="#">FootWear</a></li>
+							<li><a href="#">Bike Maintenance</a></li>
+							<li><a href="#">Bags</a></li>
+							<li><a href="#">Light</a></li>
+							<li><a href="#">Trainers</a></li>
+						</ul>
+					</div>
+					<div class="section-con">
+						<div class="sec-header opened">
+							<span>Running</span>
+							<i class="fas fa-minus"></i>
+							<div class="clearfix"></div>
+						</div>
+						<ul class="inner-sections">
+							<li><a href="#">Show All</a></li>
+							<li><a href="#">Apparel</a></li>
+							<li><a href="#">FootWear</a></li>
+							<li><a href="#">Bags</a></li>
+							<li><a href="#">Nutrition and Supplements</a></li>
+							<li><a href="#">Accessories</a></li>
+						</ul>
+					</div>
+					<div class="section-con">
+						<div class="sec-header closed">
+							<span>Swimming</span>
+							<i class="fas fa-plus"></i>
+							<div class="clearfix"></div>
+						</div>
+						<ul class="inner-sections hidden">
+							<li><a href="#">Show All</a></li>
+							<li><a href="#">SwimWear</a></li>
+							<li><a href="#">Wetsuits and Swimskins</a></li>
+							<li><a href="#">Goggles</a></li>
+							<li><a href="#">Nutrition and Supplements</a></li>
+							<li><a href="#">FootWear</a></li>
+							<li><a href="#">Bags</a></li>
+							<li><a href="#">Accessories</a></li>
+						</ul>
+					</div>
+					<div class="section-con">
+						<div class="sec-header closed">
+							<span>Cycle</span>
+							<i class="fas fa-plus"></i>
+							<div class="clearfix"></div>
+						</div>
+						<ul class="inner-sections hidden">
+							<li><a href="#">Show All</a></li>
+							<li><a href="#">Bikes</a></li>
+							<li><a href="#">Bikes Parts</a></li>
+							<li><a href="#">Wheels, Tires And Tubes</a></li>
+							<li><a href="#">Bike Maintenance</a></li>
+							<li><a href="#">Apparel</a></li>
+							<li><a href="#">FootWear</a></li>
+							<li><a href="#">Bike Maintenance</a></li>
+							<li><a href="#">Bags</a></li>
+							<li><a href="#">Light</a></li>
+							<li><a href="#">Trainers</a></li>
+						</ul>
+					</div>
+					<div class="section-con">
+						<div class="sec-header closed">
+							<span>Cycle</span>
+							<i class="fas fa-plus"></i>
+							<div class="clearfix"></div>
+						</div>
+						<ul class="inner-sections hidden">
+							<li><a href="#">Show All</a></li>
+							<li><a href="#">Bikes</a></li>
+							<li><a href="#">Bikes Parts</a></li>
+							<li><a href="#">Wheels, Tires And Tubes</a></li>
+							<li><a href="#">Bike Maintenance</a></li>
+							<li><a href="#">Apparel</a></li>
+							<li><a href="#">FootWear</a></li>
+							<li><a href="#">Bike Maintenance</a></li>
+							<li><a href="#">Bags</a></li>
+							<li><a href="#">Light</a></li>
+							<li><a href="#">Trainers</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="bottom-labels">
+				<div class="account-label">
+					<div class="container">
+						<a href="#">Your Account</a>
+					</div>
+				</div>
+				<div class="country-label">
+					<div class="container">
+						<button>Country / Language / Currency</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Side Menu -->
 
 
 	<!-- Start Script -->

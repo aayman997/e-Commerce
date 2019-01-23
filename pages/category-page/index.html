@@ -14,7 +14,7 @@
 </head>
 <body class="categoryPage">
 	<!-- Start NavBar-1 -->
-	<nav id="navBarOne" class="navbar-1">
+	<nav id="navBarOne" class="navbar-1 d-none d-lg-block">
 		<div class="container h-100">
 			<div class="row h-100">
 				<div class="col-2 my-auto">
@@ -54,7 +54,7 @@
 	<!-- End NavBar-1 -->
 
 	<!-- Start NavBar-2 -->
-	<nav id="navBarTwo" class="navbar-2">
+	<nav id="navBarTwo" class="navbar-2 d-none d-lg-block">
 		<div class="container h-100">
 			<div class="row h-100">
 				<div class="col-7 my-auto">
@@ -83,39 +83,80 @@
 		</div>
 	</nav>
 	<!-- End NavBar-2 -->
+
+	<!--  Start 768px NavBar -->
+	<section class="lg-navbar d-lg-none d-block">
+		<div class="container">
+			<div class="top-row">
+				<div class="row">
+					<div class="col-1 my-auto">
+						<i class="fas fa-bars"></i>
+					</div>
+					<div class="col-3 mx-auto">
+						<div class="logo-con">
+							<a href="#">
+								<i class="fas fa-bicycle"></i>
+								<p>Sports Store</p>
+							</a>
+						</div>
+					</div>
+					<div class="col-1 my-auto">
+						<i class="fas fa-shopping-cart"></i>
+					</div>
+				</div>
+			</div>
+			<div class="bottom-row">
+				<div class="row">
+					<div class="col-11">
+						<div class="search-box">
+							<input type="text" placeholder="Search">
+							<button><i class="fas fa-search"></i></button>
+						</div>
+					</div>
+					<div class="col-1 m-auto">
+						<i class="fas fa-user"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--  End 768px NavBar -->
+
 	<!-- Start Header -->
 	<section class="header">
 		<div class="row m-0">
 			<div class="col-6 p-0">
 				<div class="row m-0">
 					<div class="col-12 p-0">
-						<img class="img-fluid" src="../../img/header/velobar-739792-unsplash.jpg">
+						<img class="img-fluid" src="../../img/header/velobar-739792-unsplash.jpg" alt="cycling">
 					</div>
 					<div class="col-6 p-0">
-						<img class="img-fluid" src="../../img/header/Triathlon.jpg">
+						<img class="img-fluid" src="../../img/header/Triathlon.jpg" alt="Triathlon">
 					</div>
 					<div class="col-6 p-0">
-						<img class="img-fluid" src="../../img/header/camping-campsite-forest-111362.jpg">
+						<img class="img-fluid" src="../../img/header/camping-campsite-forest-111362.jpg" alt="camping">
 					</div>
 				</div>
 			</div>
 			<div class="col-3 p-0">
 				<div class="row m-0">
 					<div class="col-12 p-0">
-						<img class="img-fluid" src="../../img/header/ivana-cajina-440750-unsplash.jpg">
+						<img class="img-fluid" src="../../img/header/ivana-cajina-440750-unsplash.jpg" alt="walking">
 					</div>
 				</div>
 			</div>
 			<div class="col-3 p-0">
 				<div class="row m-0">
 					<div class="col-12 p-0">
-						<img class="img-fluid" src="../../img/header/people-swimming-swimming-pool.jpg">
+						<img class="img-fluid" src="../../img/header/people-swimming-swimming-pool.jpg" alt="swimming">
 					</div>
 					<div class="col-12 p-0">
-						<img class="img-fluid" src="../../img/header/athlete-barbell-bodybuilder-416717.jpg">
+						<img class="img-fluid"
+						     src="../../img/header/athlete-barbell-bodybuilder-416717.jpg"
+						     alt="weights">
 					</div>
 					<div class="col-12 p-0">
-						<img class="img-fluid" src="../../img/header/MASTER-postworkout2.jpg">
+						<img class="img-fluid" src="../../img/header/MASTER-postworkout2.jpg" alt="supplements">
 					</div>
 				</div>
 			</div>
@@ -128,12 +169,13 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-12 text-right">
-					<div class="sort">
+					<button class="sort">
 						<span>SortBy:</span>
 						<span>Most Relevant</span>
-					</div>
+					</button>
+					<button class="filter d-lg-none d-inline-block">Apply Filter</button>
 				</div>
-				<div class="col-3">
+				<div class="col-3 d-lg-block d-none">
 					<div class="categories">
 						<div class="category-list">
 							<div class="title">
@@ -215,13 +257,13 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-9">
+				<div class="col-lg-9 col-12">
 					<div class="products">
 						<div class="row">
 							<div class="col-xl-4 col-6">
 								<div class="product">
 									<div class="img-con">
-										<img class="img-fluid" src="../../img/shimano-1.jpg">
+										<img class="img-fluid" src="../../img/shimano-1.jpg" alt="groupset">
 										<hr>
 									</div>
 									<div class="product-details">
@@ -248,7 +290,7 @@
 							<div class="col-xl-4 col-6">
 								<div class="product">
 									<div class="img-con">
-										<img class="img-fluid" src="../../img/shimano-1.jpg">
+										<img class="img-fluid" src="../../img/shimano-1.jpg" alt="Shimano Groupset">
 										<hr>
 									</div>
 									<div class="product-details">
@@ -275,7 +317,7 @@
 							<div class="col-xl-4 col-6">
 								<div class="product">
 									<div class="img-con">
-										<img class="img-fluid" src="../../img/shimano-1.jpg">
+										<img class="img-fluid" src="../../img/shimano-1.jpg" alt="Shimano Groupset">
 										<hr>
 									</div>
 									<div class="product-details">
@@ -302,7 +344,7 @@
 							<div class="col-xl-4 col-6">
 								<div class="product">
 									<div class="img-con">
-										<img class="img-fluid" src="../../img/shimano-1.jpg">
+										<img class="img-fluid" src="../../img/shimano-1.jpg" alt="Shimano Groupset">
 										<hr>
 									</div>
 									<div class="product-details">
@@ -329,7 +371,7 @@
 							<div class="col-xl-4 col-6">
 								<div class="product">
 									<div class="img-con">
-										<img class="img-fluid" src="../../img/shimano-1.jpg">
+										<img class="img-fluid" src="../../img/shimano-1.jpg" alt="Shimano Groupset">
 										<hr>
 									</div>
 									<div class="product-details">
@@ -356,7 +398,7 @@
 							<div class="col-xl-4 col-6">
 								<div class="product">
 									<div class="img-con">
-										<img class="img-fluid" src="../../img/shimano-1.jpg">
+										<img class="img-fluid" src="../../img/shimano-1.jpg" alt="Shimano Groupset">
 										<hr>
 									</div>
 									<div class="product-details">
@@ -383,7 +425,7 @@
 							<div class="col-xl-4 col-6">
 								<div class="product">
 									<div class="img-con">
-										<img class="img-fluid" src="../../img/shimano-1.jpg">
+										<img class="img-fluid" src="../../img/shimano-1.jpg" alt="Shimano Groupset">
 										<hr>
 									</div>
 									<div class="product-details">
@@ -410,7 +452,7 @@
 							<div class="col-xl-4 col-6">
 								<div class="product">
 									<div class="img-con">
-										<img class="img-fluid" src="../../img/shimano-1.jpg">
+										<img class="img-fluid" src="../../img/shimano-1.jpg" alt="Shimano Groupset">
 										<hr>
 									</div>
 									<div class="product-details">
@@ -437,7 +479,7 @@
 							<div class="col-xl-4 col-6">
 								<div class="product">
 									<div class="img-con">
-										<img class="img-fluid" src="../../img/shimano-1.jpg">
+										<img class="img-fluid" src="../../img/shimano-1.jpg" alt="Shimano Groupset">
 										<hr>
 									</div>
 									<div class="product-details">
@@ -464,7 +506,7 @@
 							<div class="col-xl-4 col-6">
 								<div class="product">
 									<div class="img-con">
-										<img class="img-fluid" src="../../img/shimano-1.jpg">
+										<img class="img-fluid" src="../../img/shimano-1.jpg" alt="Shimano Groupset">
 										<hr>
 									</div>
 									<div class="product-details">
@@ -491,7 +533,7 @@
 							<div class="col-xl-4 col-6">
 								<div class="product">
 									<div class="img-con">
-										<img class="img-fluid" src="../../img/shimano-1.jpg">
+										<img class="img-fluid" src="../../img/shimano-1.jpg" alt="Shimano Groupset">
 										<hr>
 									</div>
 									<div class="product-details">
@@ -518,7 +560,7 @@
 							<div class="col-xl-4 col-6">
 								<div class="product">
 									<div class="img-con">
-										<img class="img-fluid" src="../../img/shimano-1.jpg">
+										<img class="img-fluid" src="../../img/shimano-1.jpg" alt="Shimano Groupset">
 										<hr>
 									</div>
 									<div class="product-details">
@@ -545,7 +587,7 @@
 							<div class="col-xl-4 col-6">
 								<div class="product">
 									<div class="img-con">
-										<img class="img-fluid" src="../../img/shimano-1.jpg">
+										<img class="img-fluid" src="../../img/shimano-1.jpg" alt="Shimano Groupset">
 										<hr>
 									</div>
 									<div class="product-details">
@@ -572,7 +614,7 @@
 							<div class="col-xl-4 col-6">
 								<div class="product">
 									<div class="img-con">
-										<img class="img-fluid" src="../../img/shimano-1.jpg">
+										<img class="img-fluid" src="../../img/shimano-1.jpg" alt="Shimano Groupset">
 										<hr>
 									</div>
 									<div class="product-details">
@@ -599,7 +641,7 @@
 							<div class="col-xl-4 col-6">
 								<div class="product">
 									<div class="img-con">
-										<img class="img-fluid" src="../../img/shimano-1.jpg">
+										<img class="img-fluid" src="../../img/shimano-1.jpg" alt="Shimano Groupset">
 										<hr>
 									</div>
 									<div class="product-details">
@@ -684,6 +726,226 @@
 		</div>
 	</section>
 	<!-- End Footer -->
+
+	<!-- Start Side Menu -->
+	<section id="sideMenu" class="side-menu">
+		<div class="side-menu-con">
+			<div class="close-menu">
+				<div class="container">
+					<p>Close Menu <i class="fas fa-times"></i></p>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<div class="sections">
+				<div class="container">
+					<div class="section-con">
+						<div class="sec-header opened">
+							<span>Cycle</span>
+							<i class="fas fa-minus"></i>
+							<div class="clearfix"></div>
+						</div>
+						<ul class="inner-sections">
+							<li><a href="#">Show All</a></li>
+							<li><a href="#">Bikes</a></li>
+							<li><a href="#">Bikes Parts</a></li>
+							<li><a href="#">Wheels, Tires And Tubes</a></li>
+							<li><a href="#">Bike Maintenance</a></li>
+							<li><a href="#">Apparel</a></li>
+							<li><a href="#">FootWear</a></li>
+							<li><a href="#">Bike Maintenance</a></li>
+							<li><a href="#">Bags</a></li>
+							<li><a href="#">Light</a></li>
+							<li><a href="#">Trainers</a></li>
+						</ul>
+					</div>
+					<div class="section-con">
+						<div class="sec-header opened">
+							<span>Running</span>
+							<i class="fas fa-minus"></i>
+							<div class="clearfix"></div>
+						</div>
+						<ul class="inner-sections">
+							<li><a href="#">Show All</a></li>
+							<li><a href="#">Apparel</a></li>
+							<li><a href="#">FootWear</a></li>
+							<li><a href="#">Bags</a></li>
+							<li><a href="#">Nutrition and Supplements</a></li>
+							<li><a href="#">Accessories</a></li>
+						</ul>
+					</div>
+					<div class="section-con">
+						<div class="sec-header closed">
+							<span>Swimming</span>
+							<i class="fas fa-plus"></i>
+							<div class="clearfix"></div>
+						</div>
+						<ul class="inner-sections hidden">
+							<li><a href="#">Show All</a></li>
+							<li><a href="#">SwimWear</a></li>
+							<li><a href="#">Wetsuits and Swimskins</a></li>
+							<li><a href="#">Goggles</a></li>
+							<li><a href="#">Nutrition and Supplements</a></li>
+							<li><a href="#">FootWear</a></li>
+							<li><a href="#">Bags</a></li>
+							<li><a href="#">Accessories</a></li>
+						</ul>
+					</div>
+					<div class="section-con">
+						<div class="sec-header closed">
+							<span>Cycle</span>
+							<i class="fas fa-plus"></i>
+							<div class="clearfix"></div>
+						</div>
+						<ul class="inner-sections hidden">
+							<li><a href="#">Show All</a></li>
+							<li><a href="#">Bikes</a></li>
+							<li><a href="#">Bikes Parts</a></li>
+							<li><a href="#">Wheels, Tires And Tubes</a></li>
+							<li><a href="#">Bike Maintenance</a></li>
+							<li><a href="#">Apparel</a></li>
+							<li><a href="#">FootWear</a></li>
+							<li><a href="#">Bike Maintenance</a></li>
+							<li><a href="#">Bags</a></li>
+							<li><a href="#">Light</a></li>
+							<li><a href="#">Trainers</a></li>
+						</ul>
+					</div>
+					<div class="section-con">
+						<div class="sec-header closed">
+							<span>Cycle</span>
+							<i class="fas fa-plus"></i>
+							<div class="clearfix"></div>
+						</div>
+						<ul class="inner-sections hidden">
+							<li><a href="#">Show All</a></li>
+							<li><a href="#">Bikes</a></li>
+							<li><a href="#">Bikes Parts</a></li>
+							<li><a href="#">Wheels, Tires And Tubes</a></li>
+							<li><a href="#">Bike Maintenance</a></li>
+							<li><a href="#">Apparel</a></li>
+							<li><a href="#">FootWear</a></li>
+							<li><a href="#">Bike Maintenance</a></li>
+							<li><a href="#">Bags</a></li>
+							<li><a href="#">Light</a></li>
+							<li><a href="#">Trainers</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="bottom-labels">
+				<div class="account-label">
+					<div class="container">
+						<a href="#">Your Account</a>
+					</div>
+				</div>
+				<div class="country-label">
+					<div class="container">
+						<button>Country / Language / Currency</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="filterMenu" class="side-menu">
+		<div class="side-menu-con">
+			<div class="close-menu">
+				<div class="container">
+					<p>Close Filter<i class="fas fa-times"></i></p>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<div class="sections">
+				<div class="container">
+					<div class="section-con">
+						<div class="sec-header opened">
+							<span>Price Range</span>
+							<i class="fas fa-minus"></i>
+							<div class="clearfix"></div>
+						</div>
+						<ul class="inner-sections">
+							<li>
+								<div class="price-range">
+									<span>From</span>
+									<div>
+										<span>$</span>
+										<input type="text" placeholder="Min">
+									</div>
+								</div>
+								<div class="price-range">
+									<span>To</span>
+									<div>
+										<span>$</span>
+										<input type="text" placeholder="Max">
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="section-con">
+						<div class="sec-header opened">
+							<span>Stock</span>
+							<i class="fas fa-minus"></i>
+							<div class="clearfix"></div>
+						</div>
+						<ul class="inner-sections">
+							<li><a href="#">Available</a></li>
+							<li><a href="#">Un Available</a></li>
+						</ul>
+					</div>
+					<div class="section-con">
+						<div class="sec-header closed">
+							<span>Gender</span>
+							<i class="fas fa-plus"></i>
+							<div class="clearfix"></div>
+						</div>
+						<ul class="inner-sections hidden">
+							<li><a href="#">Male</a></li>
+							<li><a href="#">Female</a></li>
+						</ul>
+					</div>
+					<div class="section-con">
+						<div class="sec-header closed">
+							<span>Category</span>
+							<i class="fas fa-plus"></i>
+							<div class="clearfix"></div>
+						</div>
+						<ul class="inner-sections hidden">
+							<li><a href="#">Show All</a></li>
+							<li><a href="#">Cycling</a></li>
+							<li><a href="#">Triathlon</a></li>
+							<li><a href="#">Camping</a></li>
+							<li><a href="#">Running</a></li>
+							<li><a href="#">Swimming</a></li>
+							<li><a href="#">Weight Lift</a></li>
+							<li><a href="#">Supplements</a></li>
+						</ul>
+					</div>
+					<div class="section-con">
+						<div class="sec-header closed">
+							<span>Size</span>
+							<i class="fas fa-plus"></i>
+							<div class="clearfix"></div>
+						</div>
+						<ul class="inner-sections hidden">
+							<li><a href="#">XXS</a></li>
+							<li><a href="#">XS</a></li>
+							<li><a href="#">S</a></li>
+							<li><a href="#">M</a></li>
+							<li><a href="#">L</a></li>
+							<li><a href="#">Xl</a></li>
+							<li><a href="#">XXl</a></li>
+						</ul>
+					</div>
+					<div class="filter-menu-btns">
+						<button>Apply</button>
+						<button>Rest</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Side Menu -->
 
 	<!-- Start Script -->
 	<!---->
