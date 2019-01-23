@@ -1047,45 +1047,34 @@ body {
           float: left; }
         body.cartPage .cart-body .cart-btns button:last-of-type {
           float: right; }
-    body.cartPage .cart-body .cart-products table {
+    body.cartPage .cart-body .cart-products {
       background: #FFF;
       box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
-      border-radius: 0.5rem;
-      width: 100%; }
-      body.cartPage .cart-body .cart-products table tbody {
-        text-align: center; }
-        body.cartPage .cart-body .cart-products table tbody .table-head {
-          border-bottom: 1px solid #ECF0F1; }
-          body.cartPage .cart-body .cart-products table tbody .table-head th:first-of-type {
-            padding: 20px 0 20px 20px;
-            text-align: left; }
-          body.cartPage .cart-body .cart-products table tbody .table-head th:last-of-type {
-            padding: 20px 20px 20px 0; }
-        body.cartPage .cart-body .cart-products table tbody .table-product:not(:last-of-type) {
-          border-bottom: 1px solid #ECF0F1; }
-        body.cartPage .cart-body .cart-products table tbody .table-product td:first-of-type {
-          padding: 20px 0 20px 20px;
-          text-align: left; }
-        body.cartPage .cart-body .cart-products table tbody .table-product td:last-of-type {
-          padding: 20px 20px 20px 0; }
-        body.cartPage .cart-body .cart-products table tbody .table-product td img {
-          display: inline-block;
-          width: 120px; }
-        body.cartPage .cart-body .cart-products table tbody .table-product td .product-details {
-          display: inline-block;
-          vertical-align: top;
+      border-radius: 0.5rem; }
+      body.cartPage .cart-body .cart-products .table-head {
+        border-bottom: 1px solid #ECF0F1;
+        padding: 20px; }
+        body.cartPage .cart-body .cart-products .table-head h5 {
+          margin-bottom: 0; }
+      body.cartPage .cart-body .cart-products .table-body .product-row {
+        border-bottom: 1px solid #ECF0F1;
+        padding: 20px; }
+        body.cartPage .cart-body .cart-products .table-body .product-row .item-description img {
+          width: 150px; }
+        body.cartPage .cart-body .cart-products .table-body .product-row .item-description .product-details {
+          vertical-align: middle;
           margin-left: 30px; }
-          body.cartPage .cart-body .cart-products table tbody .table-product td .product-details .title {
+          body.cartPage .cart-body .cart-products .table-body .product-row .item-description .product-details .title {
             color: #1ABC9C;
             font-size: 18px;
             margin-bottom: 10px; }
-          body.cartPage .cart-body .cart-products table tbody .table-product td .product-details a {
+          body.cartPage .cart-body .cart-products .table-body .product-row .item-description .product-details a {
             color: #D50100;
             margin-top: 10px; }
-        body.cartPage .cart-body .cart-products table tbody .table-product td .quantity-meter i {
+        body.cartPage .cart-body .cart-products .table-body .product-row .quantity-meter i {
           text-align: center;
           font-size: 18px; }
-        body.cartPage .cart-body .cart-products table tbody .table-product td .quantity-meter span {
+        body.cartPage .cart-body .cart-products .table-body .product-row .quantity-meter span {
           font-size: 18px;
           font-family: raleway-medium, sans-serif;
           text-align: center;
@@ -1095,10 +1084,33 @@ body {
           border-radius: 10px;
           border: 1px solid #D9D9D9;
           margin: 0 5px; }
-        body.cartPage .cart-body .cart-products table tbody .table-product td .price p:first-of-type {
+        body.cartPage .cart-body .cart-products .table-body .product-row .price p:first-of-type {
           font-size: 18px; }
-        body.cartPage .cart-body .cart-products table tbody .table-product td .price p:last-of-type {
+        body.cartPage .cart-body .cart-products .table-body .product-row .price p:last-of-type {
           font-size: 15px; }
+        body.cartPage .cart-body .cart-products .table-body .product-row .details-col .product-details {
+          vertical-align: middle; }
+          body.cartPage .cart-body .cart-products .table-body .product-row .details-col .product-details .title {
+            color: #1ABC9C;
+            font-size: 18px;
+            margin-bottom: 10px; }
+          body.cartPage .cart-body .cart-products .table-body .product-row .details-col .product-details a {
+            color: #D50100;
+            margin-top: 10px; }
+          body.cartPage .cart-body .cart-products .table-body .product-row .details-col .product-details .price {
+            margin: 10px 0; }
+            body.cartPage .cart-body .cart-products .table-body .product-row .details-col .product-details .price p {
+              display: inline-block; }
+              body.cartPage .cart-body .cart-products .table-body .product-row .details-col .product-details .price p:first-of-type {
+                font-size: 18px; }
+              body.cartPage .cart-body .cart-products .table-body .product-row .details-col .product-details .price p:last-of-type {
+                font-size: 15px;
+                color: #27AE60; }
+          body.cartPage .cart-body .cart-products .table-body .product-row .details-col .product-details .total-price {
+            margin-top: 10px; }
+            body.cartPage .cart-body .cart-products .table-body .product-row .details-col .product-details .total-price p span {
+              margin-left: 10px;
+              color: #27AE60; }
     body.cartPage .cart-body .delivery, body.cartPage .cart-body .voucher, body.cartPage .cart-body .total-box {
       background: #FFF;
       box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
