@@ -38,7 +38,7 @@ $vHeight : 100vh;
 {
   min-width : 86.2%;
   width     : 86.2%;
-  @media screen and (max-width : 768px)
+  @media screen and (max-width : 767px)
   {
 	min-width : 96%;
 	width     : 96%;
@@ -244,7 +244,7 @@ body
 	padding    : 15px 0;
 	position   : fixed;
 	top        : 0;
-	width      : 100vw;
+	width      : 100%;
 	z-index    : 2;
 	transition : height 0.4s ease-in-out;
 	.top-row
@@ -290,7 +290,7 @@ body
 		  {
 			color : $althColor;
 		  }
-		  @media screen and (max-width : 768px)
+		  @media screen and (max-width : 767px)
 		  {
 			padding-left : 10px;
 			width        : 85%;
@@ -309,7 +309,7 @@ body
 		  line-height   : 21px;
 		  transition    : background-color 0.2s ease-in-out;
 		  cursor        : pointer;
-		  @media screen and (max-width : 768px)
+		  @media screen and (max-width : 767px)
 		  {
 			width : 15%;
 		  }
@@ -569,7 +569,7 @@ body
 			  background-color : $secondTXTColor;
 			  color            : $secondBGColor;
 			}
-			@media screen and (max-width : 768px)
+			@media screen and (max-width : 767px)
 			{
 			  width : 100%;
 			}
@@ -619,19 +619,24 @@ body
 	.advantages
 	{
 	  overflow   : hidden;
-	  height     : 700px;
+	  height     : 950px;
 	  text-align : center;
 	  position   : relative;
 	  padding    : 10px 0;
 	  .card-img-overlay
 	  {
 		background-color : $althColor;
-		height           : 600px;
+		height           : 850px;
 		width            : 105vw;
 		margin-left      : -2.5vw;
 		margin-top       : 50px;
 		margin-bottom    : 50px;
 		transform        : rotate(-3deg);
+		@media screen and (max-width : 767px)
+		{
+		  width       : 110vw;
+		  margin-left : -5vw;
+		}
 	  }
 	  h2
 	  {
@@ -673,6 +678,11 @@ body
 		margin-top    : 50px;
 		margin-bottom : 50px;
 		transform     : rotate(3deg);
+		@media screen and (max-width : 767px)
+		{
+		  width       : 108vw;
+		  margin-left : -4vw;
+		}
 	  }
 	  .col-1
 	  {
