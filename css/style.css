@@ -422,8 +422,8 @@ body {
         transform: rotate(-3deg); }
         @media screen and (max-width: 767px) {
           body.homePage .advantages .card-img-overlay {
-            width: 110vw;
-            margin-left: -5vw; } }
+            width: 112vw;
+            margin-left: -6vw; } }
       body.homePage .advantages h2 {
         font-family: raleway-medium, sans-serif;
         color: #27AE60;
@@ -450,10 +450,10 @@ body {
         margin-top: 50px;
         margin-bottom: 50px;
         transform: rotate(3deg); }
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
           body.homePage .sale .card-img-overlay {
-            width: 108vw;
-            margin-left: -4vw; } }
+            width: 112vw;
+            margin-left: -6vw; } }
       body.homePage .sale .col-1 {
         flex: 0 0 1%;
         max-width: 1%; }
