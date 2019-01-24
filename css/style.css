@@ -20,7 +20,12 @@
   *Container Changes
 */
 .container {
-  min-width: 86.2%; }
+  min-width: 86.2%;
+  width: 86.2%; }
+  @media screen and (max-width: 768px) {
+    .container {
+      min-width: 96%;
+      width: 96%; } }
 
 /*
 * Global Changes
@@ -165,7 +170,7 @@ body {
     padding: 15px 0;
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
     z-index: 2;
     transition: height 0.4s ease-in-out; }
     body .lg-navbar .top-row i {
@@ -192,6 +197,10 @@ body {
           float: left; }
           body .lg-navbar .bottom-row .search-box input::placeholder {
             color: #D9D9D9; }
+          @media screen and (max-width: 768px) {
+            body .lg-navbar .bottom-row .search-box input {
+              padding-left: 10px;
+              width: 85%; } }
         body .lg-navbar .bottom-row .search-box button {
           float: left;
           width: 10%;
@@ -204,6 +213,9 @@ body {
           line-height: 21px;
           transition: background-color 0.2s ease-in-out;
           cursor: pointer; }
+          @media screen and (max-width: 768px) {
+            body .lg-navbar .bottom-row .search-box button {
+              width: 15%; } }
           body .lg-navbar .bottom-row .search-box button i {
             color: #27AE60;
             transition: color 0.2s ease-in-out; }
@@ -368,6 +380,9 @@ body {
             body.homePage .header .card-img-overlay .header-text button:hover {
               background-color: #ECF0F1;
               color: #27AE60; }
+            @media screen and (max-width: 768px) {
+              body.homePage .header .card-img-overlay .header-text button {
+                width: 100%; } }
     body.homePage .category {
       padding: 300px 0 80px 0;
       text-align: center; }
