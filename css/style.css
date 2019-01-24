@@ -170,7 +170,7 @@ body {
     padding: 15px 0;
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
     z-index: 2;
     transition: height 0.4s ease-in-out; }
     body .lg-navbar .top-row i {
@@ -441,6 +441,9 @@ body {
       position: relative;
       padding: 10px 0;
       margin-top: 80px; }
+      @media screen and (max-width: 767px) {
+        body.homePage .sale {
+          padding-top: 100px; } }
       body.homePage .sale .card-img-overlay {
         background: linear-gradient(135deg, #1ABC9C 0%, #27AE60 50%, #1FB683 100%);
         opacity: 0.4;
@@ -453,14 +456,15 @@ body {
         @media screen and (max-width: 767px) {
           body.homePage .sale .card-img-overlay {
             width: 112vw;
-            margin-left: -6vw; } }
-      body.homePage .sale .col-1 {
+            margin-left: -6vw;
+            margin-top: 60px; } }
+      body.homePage .sale .col-sm-1 {
         flex: 0 0 1%;
         max-width: 1%; }
-        body.homePage .sale .col-1 .vertical-line {
+        body.homePage .sale .col-sm-1 .vertical-line {
           position: relative;
           text-align: center; }
-          body.homePage .sale .col-1 .vertical-line:after {
+          body.homePage .sale .col-sm-1 .vertical-line:after {
             content: '';
             border-right: 5px solid #ECF0F1;
             position: absolute;
