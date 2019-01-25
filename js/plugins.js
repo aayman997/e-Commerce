@@ -19,15 +19,12 @@ if ($(body).hasClass("homePage")) {
 	}
 }
 
-if ($(body).hasClass("categoryPage")) {
-	if (window.outerWidth <= 768) {
-		const totalNavsHeight = $(".lg-navbar").outerHeight(),
-			categoryHeader = $(".header");
-		homeHeader.css({
-			"marginTop": totalNavsHeight
-		});
-		console.log(totalNavsHeight);
-	}
+if ($(body).hasClass("categoryPage") && window.outerWidth <= 768) {
+	const totalNavsHeight = $(".lg-navbar").outerHeight(),
+		categoryHeader = $(".header");
+	categoryHeader.css({
+		"marginTop": totalNavsHeight,
+	});
 }
 
 
@@ -42,7 +39,8 @@ $(".owl-products")
 		responsiveClass: true,
 		responsive: {
 			0: {
-				items: 1
+				items: 1,
+				center: false
 			},
 			768: {
 				items: 3

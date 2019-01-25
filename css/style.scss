@@ -742,11 +742,19 @@ body
 		  font-size   : 18px;
 		  font-family : raleway-medium, sans-serif;
 		}
+		@media screen and (max-width : 767px)
+		{
+		  display : block;
+		}
 	  }
 	  .filter
 	  {
 		width       : 110px;
 		margin-left : 20px;
+		@media screen and (max-width : 767px)
+		{
+		  margin-left : 0;
+		}
 	  }
 	  .categories
 	  {
@@ -806,6 +814,10 @@ body
 		  border-radius : 0.5rem;
 		  padding       : 40px;
 		  margin-bottom : 16px;
+		  @media screen and (max-width : 767px)
+		  {
+			background : linear-gradient(90deg, #FFF 0%, $secondTXTColor 100%);
+		  }
 		  .img-con
 		  {
 			hr
@@ -813,6 +825,15 @@ body
 			  width      : 65%;
 			  margin     : 30px auto;
 			  background : $althColor;
+			  @media screen and (max-width : 767px)
+			  {
+				display : none;
+			  }
+			}
+			@media screen and (max-width : 767px)
+			{
+			  width   : 38%;
+			  display : inline-block;
 			}
 		  }
 		  .product-details
@@ -821,6 +842,10 @@ body
 			h5
 			{
 			  margin-bottom : 20px;
+			  @media screen and (max-width : 767px)
+			  {
+				margin-bottom : 5px;
+			  }
 			}
 			.price
 			{
@@ -832,6 +857,10 @@ body
 				font-family : raleway-Light, sans-serif;
 				color       : $mainBGColor;
 				margin-left : 15px;
+			  }
+			  @media screen and (max-width : 767px)
+			  {
+				margin-bottom : 5px;
 			  }
 			}
 			.rating
@@ -846,6 +875,17 @@ body
 				  margin-right : 10px;
 				}
 			  }
+			  @media screen and (max-width : 767px)
+			  {
+				margin-bottom : 0;
+			  }
+			}
+			@media screen and (max-width : 767px)
+			{
+			  width          : 55%;
+			  display        : inline-block;
+			  vertical-align : middle;
+			  margin-left    : 15px;
 			}
 		  }
 		  .add-compare
@@ -919,6 +959,10 @@ body
 			  width     : 60%;
 			}
 		  }
+		  @media screen and (max-width : 767px)
+		  {
+			width : 40%;
+		  }
 		}
 		.filter-menu-btns
 		{
@@ -949,6 +993,10 @@ body
 	.link
 	{
 	  margin-top : 260px;
+	  @media screen and (max-width : 767px)
+	  {
+		margin-top : 160px;
+	  }
 	  a
 	  {
 		color : $mainTXTColor;
@@ -989,7 +1037,7 @@ body
 		  @media screen and (max-width : 768px)
 		  {
 			transform      : rotate(-90deg);
-			vertical-align : middle;
+			vertical-align : text-top;
 		  }
 		}
 		img
@@ -1095,10 +1143,18 @@ body
 			font-family   : raleway-medium, sans-serif;
 			font-size     : 18px;
 			margin-bottom : 10px;
+			@media screen and (max-width : 767px)
+			{
+			  display : inline-block;
+			}
 		  }
 		  .quantity-meter
 		  {
 			margin-left : 40px;
+			@media screen and (max-width : 767px)
+			{
+			  display : inline-block;
+			}
 			i
 			{
 			  text-align  : center;
@@ -1115,6 +1171,13 @@ body
 			  {
 				border-radius : 0 40px 40px 0;
 			  }
+			  @media screen and (max-width : 767px)
+			  {
+				width       : 30px;
+				height      : 30px;
+				line-height : 27px;
+				font-size   : 18px;
+			  }
 			}
 			span
 			{
@@ -1127,6 +1190,13 @@ body
 			  border-radius : 10px;
 			  border        : 1px solid $althColor;
 			  margin        : 0 -5px;
+			  @media screen and (max-width : 767px)
+			  {
+				width         : 40px;
+				height        : 40px;
+				line-height   : 30px;
+				border-radius : 6px;
+			  }
 			}
 		  }
 		}
@@ -1307,6 +1377,13 @@ body
 				height       : 100%;
 				background   : linear-gradient(90deg, $secondTXTColor 0%, #FFF 100%);
 				padding-top  : 20px;
+				@media screen and (max-width : 767px)
+				{
+				  background     : linear-gradient(180deg, $secondTXTColor 0%, #FFF 100%);
+				  border-right   : none;
+				  border-bottom  : 1px solid $secondTXTColor;
+				  padding-bottom : 20px;
+				}
 				i
 				{
 				  width         : 90px;
@@ -1326,6 +1403,10 @@ body
 				padding-top   : 20px;
 				padding-right : 20px;
 				text-align    : center;
+				@media screen and (max-width : 767px)
+				{
+				  padding : 20px 20px 0 20px;
+				}
 				.review-title
 				{
 				  display    : inline-block;
@@ -1424,113 +1505,127 @@ body
 	}
 	.products-viewed
 	{
-	  position : relative;
+	  position   : relative;
+	  margin-top : 40px;
 	  @media screen and (min-width : 768px) and (max-width : 1024px)
 	  {
 		width  : 90%;
-		margin : auto;
+		margin : 40px auto 0 auto;
 	  }
 	  @media screen and (max-width : 768px)
 	  {
-		margin-top : 50px;
+		margin : 50px auto 0 auto;
 	  }
-	  .owl-products
+	  @media screen and (max-width : 767px)
 	  {
-		border        : 1px solid #707070;
-		border-radius : 0.5rem;
-		padding       : 25px 45px;
-		.owl-product
+		width  : 80%;
+		margin : 40px auto 0 auto;
+	  }
+	  .container
+	  {
+		> h5
 		{
-		  .title
+		  text-align    : center;
+		  margin-bottom : 15px;
+		}
+		.owl-products
+		{
+		  border        : 1px solid #707070;
+		  border-radius : 0.5rem;
+		  padding       : 25px 45px;
+		  .owl-product
 		  {
-			text-align : left;
-			font-size  : 18px;
-			margin-top : 20px;
-		  }
-		  .price
-		  {
-			margin-top : 10px;
-			color      : $mainBGColor;
+			.title
+			{
+			  text-align : left;
+			  font-size  : 18px;
+			  margin-top : 20px;
+			}
+			.price
+			{
+			  margin-top : 10px;
+			  color      : $mainBGColor;
+			}
 		  }
 		}
-	  }
-	  .owl-prev, .owl-next
-	  {
-		position         : absolute;
-		top              : 0;
-		height           : 100%;
-		background-color : transparent;
-		border           : none;
-		outline          : none;
-		&:hover
+		.owl-prev, .owl-next
 		{
-		  color : rgba(77, 192, 33, 0.5);
+		  position         : absolute;
+		  top              : 0;
+		  height           : 100%;
+		  background-color : transparent;
+		  border           : none;
+		  outline          : none;
+		  &:hover
+		  {
+			color : rgba(77, 192, 33, 0.5);
+			i
+			{
+			  color : $mainTXTColor;
+			}
+		  }
 		  i
 		  {
-			color : $mainTXTColor;
+			font-size   : 25px;
+			color       : rgba(52, 73, 94, 0.5);
+			transition  : color 0.2s ease-in-out;
+			width       : 35px;
+			height      : 35px;
+			line-height : 35px;
+			border      : 1px solid #707070;
 		  }
 		}
-		i
+		.owl-prev
 		{
-		  font-size   : 40px;
-		  color       : rgba(52, 73, 94, 0.5);
-		  transition  : color 0.2s ease-in-out;
-		  width       : 50px;
-		  height      : 50px;
-		  line-height : 50px;
-		  border      : 1px solid #707070;
-		}
-	  }
-	  .owl-prev
-	  {
-		left : -50px;
-		i
-		{
-		  border-radius : 50px 0 0 50px;
-		}
-	  }
-	  .owl-next
-	  {
-		right : -50px;
-		i
-		{
-		  border-radius : 0 50px 50px 0;
-		}
-	  }
-	  .owl-nav
-	  {
-		display : block;
-	  }
-	  .owl-dots-con
-	  {
-		position   : absolute;
-		bottom     : -35px;
-		left       : 0;
-		right      : 0;
-		margin     : auto;
-		text-align : center;
-		.owl-dots
-		{
-		  display       : inline-block;
-		  height        : 35px;
-		  padding       : 0 10px;
-		  text-align    : center;
-		  border        : 1px solid #707070;
-		  border-radius : 0 0 0.5rem 0.5rem;
-		  .owl-dot
+		  left : -35px;
+		  i
 		  {
-			width            : 15px;
-			height           : 15px;
-			background-color : $mainTXTColor;
-			margin           : 10px 5px 10px 0;
-			border-radius    : 100%;
-			&.active
+			border-radius : 50px 0 0 50px;
+		  }
+		}
+		.owl-next
+		{
+		  right : -35px;
+		  i
+		  {
+			border-radius : 0 50px 50px 0;
+		  }
+		}
+		.owl-nav
+		{
+		  display : block;
+		}
+		.owl-dots-con
+		{
+		  position   : absolute;
+		  bottom     : -35px;
+		  left       : 0;
+		  right      : 0;
+		  margin     : auto;
+		  text-align : center;
+		  .owl-dots
+		  {
+			display       : inline-block;
+			height        : 35px;
+			padding       : 0 10px;
+			text-align    : center;
+			border        : 1px solid #707070;
+			border-radius : 0 0 0.5rem 0.5rem;
+			.owl-dot
 			{
-			  background-color : $mainBGColor;
-			}
-			&:last-child
-			{
-			  margin-right : 0;
+			  width            : 15px;
+			  height           : 15px;
+			  background-color : $mainTXTColor;
+			  margin           : 10px 5px 10px 0;
+			  border-radius    : 100%;
+			  &.active
+			  {
+				background-color : $mainBGColor;
+			  }
+			  &:last-child
+			  {
+				margin-right : 0;
+			  }
 			}
 		  }
 		}
@@ -1547,6 +1642,12 @@ body
 		{
 		  width     : 80%;
 		  max-width : 80%;
+		}
+		@media screen and (max-width : 767px)
+		{
+		  width     : 90%;
+		  max-width : 90%;
+		  margin    : auto;
 		}
 		.modal-content
 		{
@@ -1598,6 +1699,12 @@ body
 				display : block;
 				width   : 100%;
 			  }
+			  @media screen and (max-width : 767px)
+			  {
+				display : block;
+				width   : 70%;
+				margin  : auto;
+			  }
 			}
 			.product-details
 			{
@@ -1609,6 +1716,11 @@ body
 			  @media screen and (max-width : 768px)
 			  {
 				margin-left : 0;
+			  }
+			  @media screen and (max-width : 767px)
+			  {
+				display : block;
+				width   : 100%;
 			  }
 			  .title
 			  {
@@ -1634,7 +1746,7 @@ body
 			padding       : 20px 30px;
 			@media screen and (max-width : 768px)
 			{
-			  margin : 20px;
+			  margin : 20px 0;
 			}
 			a
 			{
@@ -1642,10 +1754,19 @@ body
 			  display   : block;
 			  font-size : 18px;
 			  color     : $mainBGColor;
+			  @media screen and (max-width : 767px)
+			  {
+				display : block;
+			  }
 			}
 			p
 			{
 			  float : right;
+			  @media screen and (max-width : 767px)
+			  {
+				display    : block;
+				margin-top : 15px;
+			  }
 			}
 		  }
 		  .modal-btns
@@ -1662,9 +1783,18 @@ body
 			  outline       : none;
 			  color         : $secondTXTColor;
 			  cursor        : pointer;
+			  @media screen and (max-width : 767px)
+			  {
+				display : block;
+				width   : 100%;
+			  }
 			  &:first-of-type
 			  {
 				margin-right : 50px;
+				@media screen and (max-width : 767px)
+				{
+				  margin-bottom : 15px;
+				}
 			  }
 			}
 		  }
@@ -1679,6 +1809,10 @@ body
 	.cart-body
 	{
 	  margin-top : 260px;
+	  @media screen and (max-width : 767px)
+	  {
+		margin-top : 160px;
+	  }
 	  h5
 	  {
 		font-family   : raleway-medium, sans-serif;
@@ -1705,6 +1839,15 @@ body
 		  &:last-of-type
 		  {
 			float : right;
+			@media screen and (max-width : 767px)
+			{
+			  margin-top : 15px;
+			}
+		  }
+		  @media screen and (max-width : 767px)
+		  {
+			display : block;
+			width   : 100%;
 		  }
 		}
 	  }
@@ -1946,6 +2089,11 @@ body
 			  width  : 40%;
 			  height : 45px;
 			}
+			@media screen and (max-width : 767px)
+			{
+			  width  : 50%;
+			  height : 45px;
+			}
 		  }
 		  button
 		  {
@@ -1965,6 +2113,10 @@ body
 			  width  : 30%;
 			  height : 45px;
 			  float  : right;
+			}
+			@media screen and (max-width : 767px)
+			{
+			  width : 40%;
 			}
 		  }
 		}
@@ -2234,11 +2386,43 @@ body
 		  }
 		  .input-con
 		  {
+			&:nth-of-type(1)
+			{
+			  input
+			  {
+				@media screen and (max-width : 767px)
+				{
+				  display : block;
+				  width   : 100%;
+				  &:last-of-type
+				  {
+					margin-top : 15px;
+				  }
+				}
+			  }
+			}
+			&:nth-of-type(2), &:nth-of-type(3)
+			{
+			  > input
+			  {
+				@media screen and (max-width : 767px)
+				{
+				  display    : block;
+				  width      : 100%;
+				  margin-top : 15px;
+				}
+			  }
+			}
 			.city
 			{
 			  width        : 49%;
 			  display      : inline-block;
 			  margin-right : 2%;
+			  @media screen and (max-width : 767px)
+			  {
+				display : block;
+				width   : 100%;
+			  }
 			  input
 			  {
 				width         : 90%;
@@ -2257,6 +2441,17 @@ body
 			  display     : inline-block;
 			  width       : 49%;
 			  margin-left : 2%;
+			  @media screen and (max-width : 767px)
+			  {
+				display     : block;
+				width       : 100%;
+				margin-left : 0;
+				margin-top  : 15px;
+				input
+				{
+				  width : 100%;
+				}
+			  }
 			  input
 			  {
 				width         : 90%;
@@ -2339,6 +2534,10 @@ body
 			  display     : inline-block;
 			  width       : 90%;
 			  margin-left : 10px;
+			  @media screen and (max-width : 767px)
+			  {
+				width : 88%;
+			  }
 			  p
 			  {
 				&:first-of-type
@@ -2846,6 +3045,10 @@ body
 	  height     : 140px;
 	  text-align : center;
 	  font-size  : 18px;
+	  @media screen and (max-width : 767px)
+	  {
+		height : 200px;
+	  }
 	  a
 	  {
 		margin-bottom : 15px;
@@ -2930,6 +3133,16 @@ body
 			font-size       : 16px;
 			color           : $secondTXTColor;
 			text-decoration : none;
+			@media screen and (max-width : 767px)
+			{
+			  display       : block;
+			  width         : 100%;
+			  border-radius : 0.5rem !important;
+			  &:first-of-type
+			  {
+				margin-bottom : 15px;
+			  }
+			}
 			&:first-of-type
 			{
 			  background    : #3B5998;
@@ -3048,6 +3261,10 @@ body
 	  height     : 140px;
 	  text-align : center;
 	  font-size  : 18px;
+	  @media screen and (max-width : 767px)
+	  {
+		height : 200px;
+	  }
 	  a
 	  {
 		margin-bottom : 15px;
@@ -3087,6 +3304,10 @@ body
 	.profile-page-body
 	{
 	  margin-top : 260px;
+	  @media screen and (max-width : 767px)
+	  {
+		margin-top : 160px;
+	  }
 	  h4
 	  {
 		margin-bottom : 30px;
@@ -3110,6 +3331,11 @@ body
 			flex      : 0 0 33.3333%;
 			max-width : calc(100% / 3);
 		  }
+		  @media screen and (max-width : 767px)
+		  {
+			flex      : 0 0 50%;
+			max-width : calc(100% / 2);
+		  }
 		  p
 		  {
 			text-align : center;
@@ -3128,6 +3354,10 @@ body
 			p
 			{
 			  margin-left : 16px;
+			  @media screen and (max-width : 767px)
+			  {
+				margin-left : 0;
+			  }
 			}
 		  }
 		  &:nth-of-type(6)
@@ -3168,6 +3398,11 @@ body
 		padding       : 30px;
 		border-radius : 0.5rem;
 		margin-top    : 40px;
+		@media screen and (max-width : 767px)
+		{
+		  height     : 80%;
+		  text-align : center;
+		}
 		i
 		{
 		  font-size     : 30px;
