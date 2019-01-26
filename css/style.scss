@@ -592,24 +592,45 @@ body
 	  .product
 	  {
 		margin-bottom : 40px;
-		img
+		position      : relative;
+		border        : 2px solid $althColor;
+		border-radius : 0.5rem;
+		overflow      : hidden;
+		&:hover
 		{
-		  border        : 3px solid $althColor;
-		  border-radius : 0.5rem;
-		}
-		.btn-shop
-		{
-		  display       : inline-block;
-		  padding       : 5px 0;
-		  font-size     : 18px;
-		  font-family   : raleway-medium, sans-serif;
-		  width         : 80%;
-		  border        : 1px solid $althColor;
-		  border-top    : none;
-		  border-radius : 0 0 0.5rem 0.5rem;
-		  a
+		  .card-img-overlay
 		  {
-			color : $secondBGColor;
+			visibility : visible;
+			opacity    : 1;
+		  }
+		}
+		.card-img-overlay
+		{
+		  background : linear-gradient(135deg, rgba(26, 188, 156, 0.5) 0%, rgba(39, 174, 96, 0.5) 50%, rgba(31, 182, 131, 0.5) 100%);
+		  transition : opacity 0.2s ease-in-out;
+		  visibility : hidden;
+		  opacity    : 0;
+		  .overlay-text
+		  {
+			display       : inline-block;
+			background    : rgba(245, 245, 245, 0.75);
+			width         : 70%;
+			border-radius : 1rem;
+			padding       : 0.5rem;
+			p, a
+			{
+			  font-size : 1.5rem;
+			  color     : $mainTXTColor;
+			}
+			a
+			{
+			  color           : #27AE60;
+			  text-decoration : none;
+			  &:hover
+			  {
+				color : $mainTXTColor;
+			  }
+			}
 		  }
 		}
 	  }

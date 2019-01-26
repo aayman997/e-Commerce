@@ -391,21 +391,33 @@ body {
         color: #27AE60;
         margin-bottom: 80px; }
       body.homePage .category .product {
-        margin-bottom: 40px; }
-        body.homePage .category .product img {
-          border: 3px solid #D9D9D9;
-          border-radius: 0.5rem; }
-        body.homePage .category .product .btn-shop {
-          display: inline-block;
-          padding: 5px 0;
-          font-size: 18px;
-          font-family: raleway-medium, sans-serif;
-          width: 80%;
-          border: 1px solid #D9D9D9;
-          border-top: none;
-          border-radius: 0 0 0.5rem 0.5rem; }
-          body.homePage .category .product .btn-shop a {
-            color: #27AE60; }
+        margin-bottom: 40px;
+        position: relative;
+        border: 2px solid #D9D9D9;
+        border-radius: 0.5rem;
+        overflow: hidden; }
+        body.homePage .category .product:hover .card-img-overlay {
+          visibility: visible;
+          opacity: 1; }
+        body.homePage .category .product .card-img-overlay {
+          background: linear-gradient(135deg, rgba(26, 188, 156, 0.5) 0%, rgba(39, 174, 96, 0.5) 50%, rgba(31, 182, 131, 0.5) 100%);
+          transition: opacity 0.2s ease-in-out;
+          visibility: hidden;
+          opacity: 0; }
+          body.homePage .category .product .card-img-overlay .overlay-text {
+            display: inline-block;
+            background: rgba(245, 245, 245, 0.75);
+            width: 70%;
+            border-radius: 1rem;
+            padding: 0.5rem; }
+            body.homePage .category .product .card-img-overlay .overlay-text p, body.homePage .category .product .card-img-overlay .overlay-text a {
+              font-size: 1.5rem;
+              color: #34495E; }
+            body.homePage .category .product .card-img-overlay .overlay-text a {
+              color: #27AE60;
+              text-decoration: none; }
+              body.homePage .category .product .card-img-overlay .overlay-text a:hover {
+                color: #34495E; }
     body.homePage .advantages {
       overflow: hidden;
       height: 950px;
