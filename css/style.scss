@@ -551,10 +551,11 @@ body
 			font-family   : raleway-black, sans-serif;
 			margin-bottom : 60px;
 		  }
-		  button
+		  a
 		  {
 			width            : 260px;
 			height           : 60px;
+			line-height      : 60px;
 			border           : none;
 			border-radius    : 0.5rem;
 			background-color : $secondBGColor;
@@ -562,6 +563,7 @@ body
 			font-size        : 30px;
 			font-family      : raleway-medium, sans-serif;
 			cursor           : pointer;
+			text-decoration  : none;
 			transition       : color 0.2s ease-in-out,
 			background-color 0.2s ease-in-out;
 			&:hover
@@ -617,6 +619,10 @@ body
 			width         : 70%;
 			border-radius : 1rem;
 			padding       : 0.5rem;
+			@media screen and (max-width : 768px)
+			{
+			  width : 80%;
+			}
 			p, a
 			{
 			  font-size : 1.5rem;
@@ -648,8 +654,8 @@ body
 	  {
 		background-color : $althColor;
 		height           : 850px;
-		width            : 105vw;
-		margin-left      : -2.5vw;
+		width            : 107vw;
+		margin-left      : -3.5vw;
 		margin-top       : 50px;
 		margin-bottom    : 50px;
 		transform        : rotate(-3deg);
@@ -698,8 +704,8 @@ body
 		background    : linear-gradient(135deg, $mainBGColor 0%, $secondBGColor 50%, #1FB683 100%);
 		opacity       : 0.4;
 		height        : 950px;
-		width         : 105vw;
-		margin-left   : -2.5vw;
+		width         : 107vw;
+		margin-left   : -3.5vw;
 		margin-top    : 50px;
 		margin-bottom : 50px;
 		transform     : rotate(3deg);
@@ -758,14 +764,21 @@ body
 		border        : none;
 		box-shadow    : none;
 		cursor        : pointer;
-		span:first-of-type
-		{
-		  font-size   : 18px;
-		  font-family : raleway-medium, sans-serif;
-		}
 		@media screen and (max-width : 767px)
 		{
 		  display : block;
+		}
+	  }
+	  .sort
+	  {
+		padding : 0;
+		.custom-select
+		{
+		  background    : transparent;
+		  height        : 100%;
+		  border-radius : 0.5rem;
+		  padding       : 12px;
+		  border        : none;
 		}
 	  }
 	  .filter
@@ -793,6 +806,7 @@ body
 		  {
 			width         : 100%;
 			border-bottom : 1px solid #707070;
+			cursor        : pointer;
 			h5
 			{
 			  font-family   : raleway-medium, sans-serif;
@@ -806,7 +820,7 @@ body
 			  float     : right;
 			}
 		  }
-		  ul
+		  .inner-sections
 		  {
 			list-style    : none;
 			margin-top    : 15px;
@@ -822,6 +836,10 @@ body
 			  {
 				color : $mainTXTColor;
 			  }
+			}
+			&.hidden
+			{
+			  display : none;
 			}
 		  }
 		}
@@ -926,23 +944,20 @@ body
 		  }
 		  .btn
 		  {
-			button
+			width         : 210px;
+			height        : 40px;
+			border-radius : 0.5rem;
+			background    : #FFF;
+			border        : none;
+			box-shadow    : 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+			cursor        : pointer;
+			color         : $mainTXTColor;
+			font-size     : 18px;
+			margin-top    : 40px;
+			i
 			{
-			  width         : 210px;
-			  height        : 40px;
-			  border-radius : 0.5rem;
-			  background    : #FFF;
-			  border        : none;
-			  box-shadow    : 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-			  cursor        : pointer;
-			  color         : $mainTXTColor;
-			  font-size     : 18px;
-			  margin-top    : 40px;
-			  i
-			  {
-				font-size    : 16px;
-				margin-right : 5px;
-			  }
+			  font-size    : 16px;
+			  margin-right : 5px;
 			}
 		  }
 		}
@@ -1001,6 +1016,178 @@ body
 			&:first-of-type
 			{
 			  margin-right : 16px;
+			}
+		  }
+		}
+	  }
+	}
+	.modal#addToBasket
+	{
+	  background-color : rgba(0, 0, 0, 0.75);
+	  .modal-dialog
+	  {
+		width     : 50%;
+		max-width : 50%;
+		@media screen and (max-width : 768px)
+		{
+		  width     : 80%;
+		  max-width : 80%;
+		}
+		@media screen and (max-width : 767px)
+		{
+		  width     : 90%;
+		  max-width : 90%;
+		  margin    : auto;
+		}
+		.modal-content
+		{
+		  background-color : $secondTXTColor;
+		  border           : none;
+		  border-radius    : 0.5rem;
+		  overflow         : hidden;
+		  position         : relative;
+		  padding          : 50px;
+		  .close-btn
+		  {
+			width       : 30px;
+			height      : 30px;
+			line-height : 30px;
+			position    : absolute;
+			top         : 20px;
+			right       : 20px;
+			background  : none;
+			border      : none;
+			outline     : none;
+			box-shadow  : none;
+			cursor      : pointer;
+			i
+			{
+			  font-size : 20px;
+			  color     : $secondBGColor;
+			}
+		  }
+		  .success-add
+		  {
+			margin-bottom : 25px;
+			i
+			{
+			  color        : $secondBGColor;
+			  font-size    : 20px;
+			  margin-right : 15px;
+			}
+		  }
+		  .product-information
+		  {
+			font-size : 0;
+			img
+			{
+			  display       : inline-block;
+			  width         : 45%;
+			  border-radius : 0.5rem;
+			  @media screen and (max-width : 768px)
+			  {
+				display : block;
+				width   : 100%;
+			  }
+			  @media screen and (max-width : 767px)
+			  {
+				display : block;
+				width   : 70%;
+				margin  : auto;
+			  }
+			}
+			.product-details
+			{
+			  display        : inline-block;
+			  vertical-align : top;
+			  margin-left    : 5%;
+			  width          : 50%;
+			  font-size      : 1rem;
+			  @media screen and (max-width : 768px)
+			  {
+				margin-left : 0;
+			  }
+			  @media screen and (max-width : 767px)
+			  {
+				display : block;
+				width   : 100%;
+			  }
+			  .title
+			  {
+				font-size     : 18px;
+				font-family   : raleway-medium, sans-serif;
+				margin-bottom : 0.5rem;
+				@media screen and (max-width : 768px)
+				{
+				  margin-top : 15px;
+				}
+			  }
+			  p:not(:last-of-type)
+			  {
+				margin-bottom : 0.5rem;
+			  }
+			}
+		  }
+		  .full-basket
+		  {
+			background    : $althSColor;
+			border-radius : 0.5rem;
+			margin        : 40px 0 20px 0;
+			padding       : 20px 30px;
+			@media screen and (max-width : 768px)
+			{
+			  margin : 20px 0;
+			}
+			a
+			{
+			  float     : left;
+			  display   : block;
+			  font-size : 18px;
+			  color     : $mainBGColor;
+			  @media screen and (max-width : 767px)
+			  {
+				display : block;
+			  }
+			}
+			p
+			{
+			  float : right;
+			  @media screen and (max-width : 767px)
+			  {
+				display    : block;
+				margin-top : 15px;
+			  }
+			}
+		  }
+		  .modal-btns
+		  {
+			text-align : center;
+			button, a
+			{
+			  width           : 40%;
+			  height          : 45px;
+			  line-height     : 45px;
+			  text-decoration : none;
+			  background      : linear-gradient(90deg, $mainBGColor 0%, $secondBGColor 100%);
+			  border-radius   : 0.5rem;
+			  border          : none;
+			  box-shadow      : none;
+			  outline         : none;
+			  color           : $secondTXTColor;
+			  cursor          : pointer;
+			  @media screen and (max-width : 767px)
+			  {
+				display : block;
+				width   : 100%;
+			  }
+			}
+			button
+			{
+			  margin-right : 50px;
+			  @media screen and (max-width : 767px)
+			  {
+				margin-bottom : 15px;
+			  }
 			}
 		  }
 		}
@@ -1793,29 +1980,31 @@ body
 		  .modal-btns
 		  {
 			text-align : center;
-			button
+			button, a
 			{
-			  width         : 40%;
-			  height        : 45px;
-			  background    : linear-gradient(90deg, $mainBGColor 0%, $secondBGColor 100%);
-			  border-radius : 0.5rem;
-			  border        : none;
-			  box-shadow    : none;
-			  outline       : none;
-			  color         : $secondTXTColor;
-			  cursor        : pointer;
+			  width           : 40%;
+			  height          : 45px;
+			  line-height     : 45px;
+			  text-decoration : none;
+			  background      : linear-gradient(90deg, $mainBGColor 0%, $secondBGColor 100%);
+			  border-radius   : 0.5rem;
+			  border          : none;
+			  box-shadow      : none;
+			  outline         : none;
+			  color           : $secondTXTColor;
+			  cursor          : pointer;
 			  @media screen and (max-width : 767px)
 			  {
 				display : block;
 				width   : 100%;
 			  }
-			  &:first-of-type
+			}
+			button
+			{
+			  margin-right : 50px;
+			  @media screen and (max-width : 767px)
 			  {
-				margin-right : 50px;
-				@media screen and (max-width : 767px)
-				{
-				  margin-bottom : 15px;
-				}
+				margin-bottom : 15px;
 			  }
 			}
 		  }

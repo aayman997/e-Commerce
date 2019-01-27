@@ -1,15 +1,16 @@
 const homeHeader = $(".homePage .header"),
 	vph = window.innerHeight,
-	body = $("body");
-console.log(homeHeader.height());
+	body = $("body"),
+	totalBigNavsHeight = $("#navBarOne").outerHeight() + $("#navBarTwo").outerHeight(),
+	categoryHeader = $("body.categoryPage .header");
+
+
 if ($(body).hasClass("homePage")) {
 	if (window.outerWidth > 768) {
-		const totalNavsHeight = $("#navBarOne").outerHeight() + $("#navBarTwo").outerHeight();
 		homeHeader.css({
-			"height": vph - totalNavsHeight,
-			"top": totalNavsHeight
+			"height": vph - totalBigNavsHeight,
+			"top": totalBigNavsHeight
 		});
-		console.log(homeHeader.height());
 	} else if (window.outerWidth <= 768) {
 		const lgHeight = $(".lg-navbar").outerHeight();
 		homeHeader.css({
@@ -20,10 +21,9 @@ if ($(body).hasClass("homePage")) {
 }
 
 if ($(body).hasClass("categoryPage") && window.outerWidth <= 768) {
-	const totalNavsHeight = $(".lg-navbar").outerHeight(),
-		categoryHeader = $(".header");
+	const totalNavsHeight = $(".lg-navbar").outerHeight();
 	categoryHeader.css({
-		"marginTop": totalNavsHeight,
+		"marginTop": totalNavsHeight
 	});
 }
 
