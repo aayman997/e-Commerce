@@ -155,3 +155,37 @@ $(".show-order-summery-info i").on("click", function () {
 		$(this).parent().addClass("closed");
 	}
 });
+
+//Product-Page
+$(".owl-product-imgs")
+	.owlCarousel({
+		center: true,
+		loop: true,
+		autoWidth: false,
+		margin: 0,
+		nav: true,
+		dots: false,
+		items: 5,
+		mouseDrag: false,
+	});
+
+$(".owl-product-imgs .owl-prev")
+	.empty()
+	.append('<div class="row h-100 m-0"><div class="col my-auto"><i class="fas fa-chevron-left owlsizeicon"></i></div></div>');
+$(".owl-product-imgs .owl-next")
+	.empty()
+	.append('<div class="row h-100 m-0"><div class="col my-auto"><i class="fas fa-chevron-right owlsizeicon"></i></div></div>');
+
+
+const gallImgEle = $(".gallery-imgs"),
+	gallImgHeight = Math.floor(gallImgEle.height()),
+	gallImgWidth = Math.floor(gallImgEle.width());
+console.log(gallImgEle);
+console.log(gallImgHeight);
+console.log(gallImgWidth);
+
+// noinspection JSSuspiciousNameCombination
+$(".gallery-imgs-con").css({
+	"height": gallImgWidth,
+	"width": gallImgHeight
+});

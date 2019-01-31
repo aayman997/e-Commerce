@@ -143,29 +143,43 @@
 					<div class="product-img-gallery">
 						<div class="row">
 							<div class="col-lg-1 col-12 order-lg-0 order-1 gallery-imgs">
-								<div class="img-carousal">
-									<i class="fas fa-chevron-up"></i>
-									<img class="img-fluid"
-									     src="../../img/product-carousal/Shimano-105.jpg"
-									     alt="Shimano Groupset">
-									<img class="img-fluid"
-									     src="../../img/product-carousal/Shimano-105-rear.jpg"
-									     alt="Shimano Rear Derailleur">
-									<img class="img-fluid"
-									     src="../../img/product-carousal/Shimano-105-lever.jpg"
-									     alt="Shimano Lever">
-									<img class="img-fluid"
-									     src="../../img/product-carousal/Shimano-105-brake.jpg"
-									     alt="Shimano Brake">
-									<img class="img-fluid"
-									     src="../../img/product-carousal/Shimano-105-gear.jpg"
-									     alt="Shimano Gear">
-									<i class="fas fa-chevron-down"></i>
+								<div class="gallery-imgs-con">
+									<div class="owl-carousel owl-product-imgs">
+										<div class="owl-product">
+											<img class="img-fluid"
+											     src="../../img/product-carousal/Shimano-105.jpg"
+											     alt="Shimano Groupset">
+										</div>
+										<div class="owl-product">
+											<img class="img-fluid"
+											     src="../../img/product-carousal/Shimano-105-rear.jpg"
+											     alt="Shimano Rear Derailleur">
+										</div>
+										<div class="owl-product">
+											<img class="img-fluid"
+											     src="../../img/product-carousal/Shimano-105-lever.jpg"
+											     alt="Shimano Lever">
+										</div>
+										<div class="owl-product">
+											<img class="img-fluid"
+											     src="../../img/product-carousal/Shimano-105-brake.jpg"
+											     alt="Shimano Brake">
+										</div>
+										<div class="owl-product">
+											<img class="img-fluid"
+											     src="../../img/product-carousal/Shimano-105-gear.jpg"
+											     alt="Shimano Gear">
+										</div>
+									</div>
 								</div>
 							</div>
-							<div class="col-lg-7 col-12 order-lg-1 order-0 gallery-img">
+							<div class="col-lg-7 col-12 order-lg-1 order-0 gallery-big-img">
 								<div class="product-img">
-									<img class="img-fluid" src="../../img/shimano-1.jpg" alt="Shimano Groupset">
+									<img class="img-fluid"
+									     data-toggle="modal"
+									     data-target="#imgFullPage"
+									     src="../../img/shimano-1.jpg"
+									     alt="Shimano Groupset">
 								</div>
 							</div>
 						</div>
@@ -683,7 +697,7 @@
 		</div>
 	</section>
 	<!-- End Side Menu -->
-
+	<!-- Start Modal -->
 	<div class="modal fade"
 	     id="addToBasket"
 	     tabindex="-1"
@@ -712,12 +726,31 @@
 					<div class="clearfix"></div>
 				</div>
 				<div class="modal-btns">
-					<button>Continue Shopping</button>
+					<button data-dismiss="modal">Continue Shopping</button>
 					<a href="../checkout-flow/page1">Checkout Now</a>
 				</div>
 			</div>
 		</div>
 	</div>
+	<!-- Img Modal -->
+	<div class="modal fade"
+	     id="imgFullPage"
+	     tabindex="-1"
+	     role="dialog"
+	     aria-labelledby="exampleModalCenterTitle"
+	     aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<button class="close-btn" data-dismiss="modal"><i class="fas fa-times"></i></button>
+				<div class="img-con">
+					<img class="img-fluid" src="../../img/shimano-1.jpg" alt="Shimano Groupset">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- End Modal -->
+
 
 	<!-- Start Script -->
 	<script src="../../js/jquery-3.3.1.min.js"></script>
