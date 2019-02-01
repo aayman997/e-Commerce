@@ -162,7 +162,7 @@ $(".owl-product-imgs")
 		center: true,
 		loop: true,
 		autoWidth: false,
-		margin: 0,
+		margin: 40,
 		nav: true,
 		dots: false,
 		items: 5,

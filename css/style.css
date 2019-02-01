@@ -809,11 +809,8 @@ body {
     transform: rotate(90deg) translate(292px, 292px); }
     body.productPage .product .product-img-gallery .gallery-imgs .gallery-imgs-con .owl-product-imgs {
       position: relative; }
-      body.productPage .product .product-img-gallery .gallery-imgs .gallery-imgs-con .owl-product-imgs .owl-item .owl-product {
-        width: 106px !important;
-        height: 106px !important; }
-        body.productPage .product .product-img-gallery .gallery-imgs .gallery-imgs-con .owl-product-imgs .owl-item .owl-product img {
-          transform: rotate(-90deg); }
+      body.productPage .product .product-img-gallery .gallery-imgs .gallery-imgs-con .owl-product-imgs .owl-item .owl-product img {
+        transform: rotate(-90deg); }
       body.productPage .product .product-img-gallery .gallery-imgs .gallery-imgs-con .owl-product-imgs .owl-nav {
         display: block;
         position: absolute;
